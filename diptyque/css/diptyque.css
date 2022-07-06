@@ -1,0 +1,365 @@
+@charset "utf-8";
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+/* Safe Area */
+.w1280 {
+    width: 1280px;
+    margin: 0 auto;
+}
+/* PC 고정형 */
+#wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+header {
+    height: 700px;
+    background-image: url("../images/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 24px;
+}
+.logo_gnb_left {
+    width: 1170px;
+    /* 플롯 */
+    float: left;
+}
+header .logo {
+    width: 110px;
+    /* 플롯 */
+    float: left;
+    margin-top: 28px;
+}
+header nav {
+    /* 플롯 */
+    float: right;
+}
+header .gnb {
+    color: #b2e2e4;
+    font-weight: 400;
+}
+header .gnb li {
+    margin-top: 35px;
+    margin-left: 31px;
+    /* 플롯 */
+    float: left;
+}
+header .gnb li a:hover {
+    color: #fffefe;
+    font-weight: 700;
+    cursor: pointer;
+}
+header .search {
+    width: 110px;
+    margin-top: 29px;
+    text-align: right;
+    /* 플롯 */
+    float: right;
+}
+
+header .img_deco {
+    padding-left: 20px;
+}
+header .img_deco h2 {
+    font-size: 72px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 210px;
+    /* line-height: 70px; */
+}
+header .img_deco h3 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-top: 14px;
+}
+header .img_deco p {
+    font-size: 14px;
+    color: #d7d7d7;
+    margin-top: 26px;
+}
+header .img_deco p+p {
+    margin-top: 5px;
+}
+header .img_deco p button {
+    width: 150px;
+    height: 48px;
+    background-color: #014146;
+    color: #fefefe;
+    border: none;
+    margin-top: 16px;
+}
+header .img_deco p button a {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+.card_box {
+    background-color:#92acad;
+}
+/* 3단 Card Box */
+.card_box .card_box_view {
+    width: 400px;
+    height: 500px;
+    /* 플롯 */
+    float: left;
+    margin-left: 40px;
+
+    /* 포지션 구조 유지하면서 포지션값 갖는 건 relative 앱솔루트는 Hole이 생김*/
+    position: relative;
+    left: 0;
+    top: -80px;
+    z-index: 1;
+}
+.card_box .card_box_view:first-child {
+    margin-left: 0;
+}
+.card_box .card_box_info {
+    padding-bottom: 60px;
+}
+.card_box .card_box_info h2 {
+    font-size: 12px;
+    color: #e7e7e7;
+    font-weight: 400;
+    /* 플롯 */
+    float: left;
+}
+
+.card_box .card_box_info p {
+    font-size: 14px;
+    color: #e7e7e7;
+    font-weight: 600;
+    letter-spacing: -0.075em;
+    /* 플롯 */
+    float: right;
+}
+.card_box .card_box_info p img {
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+/* Section Artist  */
+.artist {
+    padding: 100px 0 140px;
+}
+.artist .artist_text {
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    color: #6f6f6f;
+    margin-bottom: 70px;
+    line-height: 1.2;
+}
+.artist .artist_text p {
+    padding-top: 24px;
+    color: #acacac;
+}
+/* .artist .line {
+    width: 110px;
+    height: 2px;
+    border-bottom: 1px solid #eee;
+    margin: 0 auto;
+    margin-bottom: 60px;
+} */
+
+/* Article MOV */
+.mov {
+    width: 100%;
+    height: 560px;
+    background-image: url("../images/video_back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* 위치기준값 */
+    position: relative;
+}
+.mov .video #diptyque_video{
+    width: 1060px;
+    /* height: 560px; */
+    /* 포지션 */
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+/* 제어버튼 */
+#dip_btn {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    z-index: 999;
+    transform: translateX(-50%);
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#dip_btn i {
+    /* background: red; */
+    font-size: 96px;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+#dip_btn i:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.best {
+    padding-top: 100px;
+    padding-top: 380px;
+    padding-bottom: 100px;
+}
+.faq {
+    height: 692px;
+    background-color: #e1e1e1;
+    padding: 74px 0 120px 0;
+}
+
+
+/* Aside Banner */
+.banner {
+    width: 100%;
+    height: 230px;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.banner_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #e1e1e1;
+    padding-top: 100px;
+}
+
+.footer .footer_logo {
+    width: 440px;
+}
+.footer .footer_logo dt {
+    margin-bottom: 24px;
+}
+.footer .footer_logo dd {
+    font-size: 14px;
+    color: #e1e1e1;
+    line-height: 24px;
+    margin-bottom: 28px;
+}
+.footer .footer_logo .sns {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* footer 서비스 */
+.footer .footer_services {
+    width: 202px;
+}
+.footer .footer_services dt {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer .footer_services dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.footer .footer_services dd a:hover {
+    color: #92acad;
+}
+
+/* footer 오더스 */
+.footer .footer_orders {
+    width: 216px;
+}
+.footer .footer_orders dt {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer .footer_orders dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.footer .footer_orders dd a:hover {
+    color: #92acad;
+}
+
+/* footer 뉴 */
+.footer .footer_new {
+    width: 258px;
+}
+.footer .footer_new dt {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer .footer_new dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.footer .footer_new dd a:hover {
+    color: #92acad;
+}
+
+/* footer 모스트 */
+.footer .footer_most {
+    width: 110px;
+}
+.footer .footer_most dt {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+.footer .footer_most dd {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+.footer .footer_most dd a:hover {
+    color: #92acad;
+}
+
+/* Copyright */
+.footer .copyright {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.footer .copyright_line {
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 32px;
+}
+
+/* 플롯레이아웃 */
+.footer_logo,
+.footer_services,
+.footer_orders,
+.footer_new,
+.footer_most {
+    /* 플롯 */
+    float: left;
+}
+.copyright {
+    clear: both;
+}
+/* color: #01494e; */
