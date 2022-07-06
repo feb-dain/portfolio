@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <!-- 조건부주석 -->
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="./js/respond.src.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/PIE.js"></script><![endif]-->
+    <!-- 아이콘 -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon.png">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/airbnb_main.css">
+
+    <!-- 제이쿼리 코어파일 사용 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+
+    <!-- 제이쿼리 플러그인 파일 -->
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery.scrollTo.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+
+    <!-- BoxSlider -->
+    <script src="./js/jquery.bxslider.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header class="cf">
+            <h2><img src="./images/ab_logo.png" alt="logo"></h2>
+
+            <!-- 햄버거 -->
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <!-- /햄버거 -->
+            
+            <form action="#">
+                <i class="fa fa-search"></i>
+                <input type="txt" autocomplete="off">
+            </form>
+
+        </header>
+        <!-- GNB 메뉴 -->
+        <nav class="gnb">
+            <ul>
+                <li class="no_ml"><a href="airbnb_sub.html"><img src="./images/icon1.jpg" alt="수영장"><br>수영장</a></li>
+                <li><a href="#"><img src="./images/icon2.jpg" alt="캠핑장"><br>캠핑장</a></li>
+                <li><a href="#"><img src="./images/icon3.jpg" alt="스키장"><br>스키장</a></li>
+                <li><a href="#"><img src="./images/icon4.jpg" alt="해변"><br>해변</a></li>
+                <li><a href="#"><img src="./images/icon5.jpg" alt="계곡"><br>계곡</a></li>
+                <li><a href="#"><img src="./images/icon6.jpg" alt="산"><br>산</a></li>
+            </ul>
+        </nav>
+        <!-- /GNB 메뉴 -->
+        <!-- Hover -->
+        <div class="hover">
+            <span></span>
+            <span></span>
+        </div>
+        <!-- /Hover -->
+        <!-- Contents -->
+        <main role="main" id="contents">
+             <!-- /Main -->
+            <div class="mainSlider">
+                <ul class="slider">
+                    <li><a href="#"><img src="./images/main.jpg" alt="mainSlider" width="100%" height="300px"></a></li>
+                </ul>
+                <div class="like cf">
+                    <p>3,824+</p>
+                    <img src="./images/heart.png" alt="heart">
+                </div>
+                <div class="details cf">
+                    <div class="desc">
+                        <h3>제주어반트리</h3>
+                        <h4>제주특별자치도 제주시 애월읍</h4>
+                    </div>
+                    <div class="price">
+                        <h5>
+                            175,000원 <span>/&nbsp;1박</span>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <!-- /Main -->
+            <!-- Event  -->
+            <div class="event">
+                <div class="title cf">
+                    <h2>EVENT</h2>
+                    <a href="#">
+                        <div class="showMore cf">
+                            <h3>더보기</h3>
+                            <img src="./images/arrow.png" alt="arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="event_photos cf">
+                    <a href="#"><img src="./images/event1.jpg" alt="house_photo"></a>
+                    <ul>
+                        <li><a href="#"><img src="./images/event2.png" alt="house_photo"></a></li>
+                        <li><a href="#"><img src="./images/event3.png" alt="house_photo"></a></li>
+                    </ul>
+                </div>
+                <div class="details cf">
+                    <div class="desc">
+                        <h3>제주독채펜션 월정그곳</h3>
+                        <h4>제주특별자치도 제주시 구좌읍</h4>
+                    </div>
+                    <div class="price">
+                        <h5>
+                            137,480원 <span>/&nbsp;1박</span>
+                        </h5>
+                        <h6>
+                            277,000원 <span>/&nbsp;1박</span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+             <!-- /Event  -->
+             <!-- Promotion -->
+            <div class="promotion">
+                <div class="title cf">
+                    <h2>PROMOTION</h2>
+                    <div class="showMore cf">
+                        <div class="showMore cf">
+                            <h3>더보기</h3>
+                            <img src="./images/arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="promo_box cf">
+                    <a href="#">
+                        <img src="./images/promotion1.jpg" alt="promotion">
+                        <div class="promo_text">
+                            <h2>Room & Breakfast</h2>
+                            <h3>객실 + 조식</h3>
+                            <h4>
+                                신선한 식재료를 활용한 <br>
+                                조식으로 아침을 맞이하는 건 <br>
+                                어떠실까요?
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="promo_box cf">
+                    <a href="#">
+                        <img src="./images/promotion2.jpg" alt="promotion">
+                        <div class="promo_text">
+                            <h2>Summer for You</h2>
+                            <h3>객실 + 수영</h3>
+                            <h4>
+                                눈부시도록 찬란한 여름을<br>
+                                그대에게
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="promo_box cf">
+                    <a href="#">
+                        <img src="./images/promotion3.jpg" alt="promotion">
+                        <div class="promo_text">
+                            <h2>Once in a Life</h2>
+                            <h3>한달살이 패키지</h3>
+                            <h4>
+                                익숙한 동네를 벗어나 <br>
+                                새로운 곳에서의 생활을 <br>
+                                꿈꿔본 적 있으신가요? <br>
+                                오로지 나에게만 집중하는 <br>
+                                힐링타임 -
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="promo_box cf">
+                    <a href="#">
+                        <img src="./images/promotion4.jpg" alt="promotion">
+                        <div class="promo_text">
+                            <h2>
+                                Celebrate Your<br>
+                                Moment
+                            </h2>
+                            <h3>파티룸 + 와인</h3>
+                            <h4>
+                                특별한 날에 <br>
+                                사랑하는 사람들과 함께 <br>
+                                파티를 즐기세요.
+                            </h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+             <!-- /Promotion -->
+             <!-- News -->
+             <div class="news">
+                 <div class="title cf">
+                    <h2>News</h2>
+                </div>
+                <div class="newsContents cf">
+                    <div class="news_content">
+                        <h4><a href="#"><img src="./images/news1.jpg" alt="partnership"></a></h4>
+                        <p>
+                            에어비앤비, <br>
+                            로컬스티치와 파트너쉽체결
+                        </p>
+                    </div>
+                    <div class="news_content">
+                        <h4><a href="#"><img src="./images/news2.jpg" alt="superstarproject"></a></h4>
+                        <p>
+                            에어비앤비 X 지드래곤 <br>
+                            슈퍼스타 프로젝트
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /News -->
+        </main>
+        <!-- /Contents -->
+        <!-- Tab Bar -->
+        <aside class="tabBar cf">
+            <div class="profile">
+                <a href="#">
+                    <img src="./images/profile.png" alt="profile">
+                    <p>내정보</p>
+                </a>
+            </div>
+            <div class="wishList">
+                <a href="#">
+                    <img src="./images/heart_30.png" alt="wishList">
+                    <p>위시리스트</p>
+                </a>
+            </div>
+            <div class="hostReg">
+                <a href="#">
+                    <img src="./images/plus.png" alt="hostRegistration">
+                    <p>호스트등록</p>
+                </a>
+            </div>
+        </aside>
+        <!-- /Tab Bar -->
+        <!-- Footer -->
+        <footer>
+            <div class="footer_menu cf">
+                <div class="footer_left">
+                    <h2>에어비앤비 지원</h2>
+                    <ul>
+                        <li><a href="#">도움말센터</a></li>
+                        <li><a href="#">에어커버</a></li>
+                        <li><a href="#">안전 정보</a></li>
+                        <li><a href="#">장애인 지원</a></li>
+                        <li><a href="#">예약 취소 옵션</a></li>
+                        <li><a href="#">코로나19 대응 방안</a></li>
+                        <li><a href="#">이웃 민원 신고</a></li>
+                    </ul>
+                    <h2>커뮤니티</h2>
+                    <ul>
+                        <li><a href="#">재난 구호 숙소</a></li>
+                        <li><a href="#">아프간 난민 지원</a></li>
+                        <li><a href="#">차별 철폐를 위한 노력</a></li>
+                    </ul>
+                </div> 
+                <div class="footer_right">
+                    <h2>호스팅</h2>
+                    <ul>
+                        <li><a href="#">호스팅 시작하기</a></li>
+                        <li><a href="#">호스트를 위한 에어커버</a></li>
+                        <li><a href="#">호스팅 자료 둘러보기</a></li>
+                        <li><a href="#">커뮤니티 포럼 방문하기</a></li>
+                        <li><a href="#">책임감 있는 호스팅</a></li>
+                    </ul>
+                    <h2>소개</h2>
+                    <ul>
+                        <li><a href="#">뉴스룸</a></li>
+                        <li><a href="#">새로운 기능</a></li>
+                        <li><a href="#">공동창업자의 메시지</a></li>
+                        <li><a href="#">채용정보</a></li>
+                        <li><a href="#">투자자 정보</a></li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="copyright">
+                <p>
+                    &copy; 2022 Airbnb, Inc.<br>
+                    개인정보 처리방침·이용약관·사이트맵 환불 정책·회사 세부정보<br>
+                    언어 선택 한국어 (KR) 통화 선택 ₩KRW
+                </p>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+</body>
+</html>
