@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* Viewport 가변단위 */
+/* 1920(vw): 내 마음 속의 기준값 x 936(vh) */
+
+* {
+    background-color: transparent !important;
+}
+.maxw1440 {
+    max-width: 1440px;
+    /* (1440/1920)*100= 75*/
+    width: 75vw;
+    margin: 0 auto;
+}
+body, html {
+    font-size: 16px;
+    /* (16/936)*100=1.709402 */
+    font-size: 1.709402vh;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    width: 100vw;
+    height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+/* Video  */
+.video_wrapper {
+    width: 100vw;
+    height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.video_wrapper video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+/* Video Control Button */
+#car_btn {
+    /* 포지션 */
+    position: absolute;
+    left: 48px;
+    /* (48/1920)*100=2.5 */
+    left: 2.5vw;
+    bottom: 56px;
+    /* (56/936)*100=5.982906 */
+    bottom: 5.982906vh;
+    z-index: 10;
+}
+#car_btn i {
+    font-size: 24px;
+    /* (24/936)*100=2.564103 */
+    font-size: 2.564103vh;
+    color: #fff;
+    cursor: pointer;
+}
+#car_sound {
+    /* 포지션 */
+    position: absolute;
+    left: 96px;
+    /* (96/1920)*100=5 */
+    left: 5vw;
+    bottom: 56px;
+    /* (56/936)*100=5.982906 */
+    bottom: 5.982906vh;
+    z-index: 10;
+}
+#car_sound i {
+    font-size: 24px;
+    /* (24/936)*100=2.564103 */
+    font-size: 2.564103vh;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+/* Image Text */
+.video_text {
+    position: absolute;
+    left: 48px;
+    /* (48/1920)*100=2.5 */
+    left: 2.5vw;
+    bottom: 100px;
+    /* (100/936)*100=10.683761 */
+    bottom: 10.7vh;
+    z-index: 20;
+}
+.video_text h2 {
+    font-size: 72px;
+    /* (72/936)*100=7.692308 */
+    font-size: 7.7vh;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    letter-spacing: -2px;
+    /* 2/1920*100=0.104167 */
+    letter-spacing: 0.1vw;
+}
+.video_text p {
+    font-size: 21px;
+    /* 21/936*100=2.24359 */
+    font-size: 2.2vh;
+    color: #fff;
+    font-weight: 300;
+    margin-top: 16px;
+    /* 16/936*100=1.709402 */
+    margin-top: 1.7vh;
+    text-indent: 0.2em;
+}
+
+/* Header */
+.header {
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 36px;
+    /* 36/936*100=3.846154 */
+    padding-top: 3.8vh;
+    text-align: center;
+}
+.header h1 {
+    width: 160px;
+    /* 160/1920*100=8.333333 */
+    width: 8vw;
+}
+.header .gnb_wrap {
+    font-size: 20px;
+    /* 20/936*100=2.136752 */
+    font-size: 2.1vh;
+    font-weight: 500;
+}
+.header .gnb {
+    display: flex;
+}
+.header .gnb li {
+    padding: 0 40px;
+    /* 40/1920*100=2.083333 */
+    padding: 0 2vw;
+}
+.header .snb_wrap {
+    font-size: 14px;
+    /* 14/936*100=1.495726 */
+    font-size: 1.5vh;
+}
+.header .snb {
+    display: flex;
+}
+.header .snb li {
+    padding: 0 8px;
+    /* 8/1920*100=0.416667 */
+    padding: 0 0.4vw;
+}
+.header .snb li:last-child {
+    border: 1px solid #fff;
+    font-size: 12px;
+    /* 12/936*100=1.282051 */
+    font-size: 1.3vh;
+    padding: 4px 12px;
+    /* 4/936*100=0.42735 */
+    /* 12/1920*100=0.625 */
+    padding: 0.4vh 0.6vw;
+    margin-top: -4px;
+    margin-top: -0.42735vh;
+}
+.header .snb li a {
+    font-weight: 300;
+}

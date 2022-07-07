@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="dainlee">
+    <meta name="discription" content="portfolio, subject">
+    <title>뷰포트 단위 연습</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon_black.png">
+    <!-- 홈페이지 위, 이름 옆에 아이콘 -->
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon_black_180.png">
+    <!-- 바로가기 깔았을때 아이콘? -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+       
+    <!-- 페이지 CSS -->
+    <!-- BoxSlider -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/cola.css">
+    <!-- <link rel="stylesheet" href="./css/display_none_scrollbar.css"> -->
+
+    <!-- 조건부주석 -->
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="./js/respond.src.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/PIE.js"></script><![endif]-->
+
+    <!-- 제이쿼리 코어 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 제이쿼리 플러그인 파일 -->
+    <script src="./js/prefixfree.min.js"></script>
+    <!-- BoxSlider -->
+    <script src="./js/jquery.bxslider.js"></script>
+    <!-- 플러그인파일은 무조건 코어파일 아래에! 
+        구조,경로 시키는대로만 하면 편하게 적용가능하지만 한계점 있음 -->
+
+    <!-- 페이지 JS -->
+</head>
+<body>
+    <div id="wrap">
+        <!-- Video Background -->
+        <figure class="video_wrapper">
+            <video class="video" autoplay loop muted>
+                <source src="./media/cocacola.mp4" type="video/mp4">
+            </video>
+            <!-- Video Control Button -->
+            <button id="car_btn">
+                <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+            </button>
+            <button id="car_sound">
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
+            </button>
+            <!-- /Video Control Button -->
+            <!-- Image Text -->
+            <div class="video_text">
+                <h2>
+                    BUILD <br>
+                    Together
+                </h2>
+                <p>
+                    고객과 함께 최고의 가치를 실현하는 기업
+                </p>
+            </div>
+            <!-- /Image Text -->
+        </figure>
+        <!-- /Video Background -->
+
+        <!-- Header -->
+        <header class="header maxw1440">
+            <h1><img src="./svg/Coca-cola_logo_fff.svg" alt="logo"></h1>
+            <nav class="gnb_wrap">
+                <ul class="gnb">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사업분야</a></li>
+                    <li><a href="#">홍보센터</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <nav class="snb_wrap">
+                <ul class="snb">
+                    <li><a href="#">뉴스룸&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">투자정보&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">채용&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /Header -->
+
+        <!-- Footer -->
+        <!-- <footer class="footer">
+            <h3><img src="./svg/coca-cola_logo.svg" alt="logo"></h3>
+            <nav>
+                <ul class="fnb">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                    <li><a href="#">사이버감사실</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일수집거부</a></li>
+                </ul>
+                <div class="copyright">
+                    04548 서울특별시 중구 을지로 170 ㈜코카콜라 대표번호 : 02-2288-3114
+                    <span>
+                        Copyright &copy; Coca Cola &amp; Corporation Co., Ltd. All Rights Reserved.
+                    </span>
+                </div>
+            </nav>
+            <ul class="sns">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </footer> -->
+        <!-- /Footer -->
+    </div>
+
+    <script src="./js/cola.js"></script>
+</body>
+</html>
