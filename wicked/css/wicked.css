@@ -89,8 +89,6 @@ input[id="menuicon"]:checked +label+nav {
     height: 42px;
     line-height: 42px;
     padding-left: 24px;
-    /* padding-right: 24px; */
-
 }
 .header .mobile_gnb .gnb>li:hover {
     background: #fff;
@@ -120,7 +118,7 @@ input[id="menuicon"]:checked +label+nav {
 .header .mobile_gnb .sns li {
     display: table-cell;
     width: 30px;
-    padding-right: 20px;
+    padding-right: 18px;
 }
 .header .mobile_gnb .sns li a {
     display: table-cell;
