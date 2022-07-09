@@ -1,0 +1,229 @@
+@charset "utf-8";
+#wrap {
+    width: 100%;
+    border: none;
+}
+/* A. 햄버거메뉴 그리기 */
+input[id="menuicon"] {
+    display: none;
+}
+input[id="menuicon"]+label {
+    display: block;
+    width: 56px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999997;
+    background: #000;
+    transition: all 0.4s;
+}
+input[id="menuicon"]+label span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #8abf3f;
+    /* 포지션 */
+    position: fixed;
+    z-index: 999999;
+    transition: all 0.3s;
+}
+input[id="menuicon"]+label span:nth-child(1) {
+    left: 16px;
+    top: 24px;
+}
+input[id="menuicon"]+label span:nth-child(2) {
+    left: 16px;
+    top: 30px;
+}
+input[id="menuicon"]+label span:nth-child(3) {
+    left: 16px;
+    top: 34px;
+}
+
+/* B. 클릭시 X버튼 만들기 */
+input[id="menuicon"]:checked +label span:nth-child(1) {
+    top: 34px;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked +label span:nth-child(2) {
+    opacity: 0;
+}
+input[id="menuicon"]:checked +label span:nth-child(3) {
+    top: 32px;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+/* C. GNB 메뉴 슬라이딩 효과 */
+.header nav[class="mobile_gnb"] {
+    width: 250px;
+    height: 100%;
+    background: #111;
+    /* 포지션 */
+    position: fixed;
+    left: -300px;
+    top: 0;
+    z-index: 99999;
+    transition: all 0.3s;
+}
+input[id="menuicon"]:checked +label+nav {
+    left: 0;
+}
+input[id="menuicon"]:checked +label {
+    background: #111;
+    transition: all 0.15s;
+}
+
+/* LOGO */
+.logo {
+    text-align: center;
+}
+.logo h2 {
+    width: 100%;
+    height: 62px;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+}
+.logo h2 img {
+    width: 64px;
+    margin-top: 20px;
+}
+
+/* Contents */
+/* Youtube Section */
+.youtube {
+    margin-bottom: 6px;
+}
+.youtube video {
+    width: 100%;
+}
+
+/* Contents Section */
+.promotion {
+    padding: 0 10px 10px 10px;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 500;
+}
+.promotion p:first-child {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.promotion p:last-child {
+    letter-spacing: -0.05em;
+    font-weight: normal;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+/* Schedule */
+#sch_wrap {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: normal;
+}
+#sch_wrap .btn {
+    text-align: center;
+}
+#sch_wrap .btn button {
+    width: 40%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    background: #8abf3f;
+    border: 1px solid #8abf3f;
+    padding: 6px 0;
+}
+#sch_wrap .btn .btn_sep {
+    margin-right: 5%;
+}
+#sch_wrap .btn .btn_oct {
+    background: none;
+    color: #8abf3f;
+}
+.sch_box {
+    /* margin-top: 12px; */
+    margin: 12px auto;
+    border: 2px solid #8abf3f;
+    color: #fff;
+    width: 90%;
+    height: 140px;
+    overflow-y: scroll;
+    scrollbar-width: 2px;
+    /* -ms-overflow-style: none; */
+    padding: 20px;
+    text-align: center;
+}
+.sch_box .sep .sch:nth-child(1) {
+    color: #8abf3f;
+}
+.sch_box .oct {
+    display: none;
+}
+
+/* 스크롤바 커스텀 */
+.sch_box::-webkit-scrollbar {
+    /* diplay:none; */
+    width: 5px;
+}
+.sch_box::-webkit-scrollbar-thumb {
+    height: 2px;
+    background-color: #8abf3f;
+}
+.sch_box::-webkit-scrollbar-track {
+    background-color: #000;
+    background-color: #efefef;
+    border-left: 2px solid #8abf3f;
+}
+.sch_box::-webkit-scrollbar-button:start:decrement, 
+.sch_box::-webkit-scrollbar-button:end:increment {
+    display: block;
+    height: 6px;
+    background-color: #efefef;
+    border-left: 2px solid #8abf3f;
+} 
+
+.sch_box ul li {
+    margin-top: 26px;
+}
+.sch_box ul li:first-child {
+    margin-top: 0;
+}
+.sch_box ul li:hover {
+    color: #8abf3f;
+    cursor: pointer;
+}
+.getT h2 {
+    margin-top: 22px;
+    font-size: 0.75rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 12px;
+} 
+#sch_date {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    color: #8abf3f;
+}
+#sch_date p {
+    font-weight: 700;
+}
+
+/* Button */
+.button {
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 18px;
+    padding-bottom: 100px;
+}
+.button button {
+    width: 90%;
+}
+
