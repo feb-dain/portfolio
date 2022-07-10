@@ -448,14 +448,15 @@ footer {
 }
 
 footer .copyright {
-    color: #4d4c4c;
+    color: #5c5c5c;
     font-size: 10px;
-    padding: 0 0 30px 26px;
+    font-weight: 300;
+    padding: 0 0 30px 30px;
     letter-spacing: -0.05em;
     line-height: 1.5;
 }
 .footer_sub {
-    color: #383838;
+    color: #424242;
     font-size: 11px;
     padding: 8px 0 10px 10px;
     display: none;
