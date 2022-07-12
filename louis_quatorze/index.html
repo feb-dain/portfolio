@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="dainlee">
+    <meta name="discription" content="portfolio, Louis Quatorze">
+    <title>Louis Quatorze</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/p_images/favicon.jpg">
+    <link rel="apple-touch-icon=precomposed" href="./images/p_images/favicon.jpg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/louis.css">
+    <!-- BoxSlider -->
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- 스와이퍼 css -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="./js/respond.src.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/PIE.js"></script><![endif]-->
+    
+    <!-- 제이쿼리 코어 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    
+    <!-- JS 플러그인 파일 -->
+    <script src="./js/prefixfree.min.js"></script>
+    <style>
+        article {
+            max-width: 1920px;
+            margin: 0 auto;
+
+        }
+        #gallery_wrap {
+            max-width: 1920px;
+        }
+        #gallery_wrap img {
+            width: 100%;
+        }
+    </style>
+    <!-- BoxSlider -->
+    <script src="./js/jquery.bxslider.js"></script>
+    
+    <!-- 페이지 JS -->
+    <script src="https://kit.fontawesome.com/a9f8e9bd30.js" crossorigin="anonymous"></script>
+    <script src="./js/louis.js"></script>
+    <!-- 모듈화 스크립트 -->
+    <script>
+        $(function(){
+            // Header 페이지 추가
+            $('.header').load('./louis_header_footer/header.html',function(){
+                    $('.menu_toggle_btn').click(function(){
+                    $('.gnb').stop().toggle();
+                });
+            });
+
+            // Footer 페이지 추가
+            $('.footer').load('./louis_header_footer/footer.html');
+
+        });
+    </script>
+
+    <!-- 박스 슬라이더 스크립트 -->
+    <script>
+        $(function(){
+            $('.slide_gallery').bxSlider({
+                mode: 'fade',
+                auto: true,
+                autoControls: false,
+                autoHover: true,
+                pager: true,
+                slideWidth: 1920
+            });
+        });
+    </script>
+</script>
+
+</head>
+<body>
+    <div id="wrap">
+        <!-- 1. Header -->
+        <header class="header cf container">
+        </header>
+        <!-- /1. Header -->
+
+        <!-- 2. Slider -->
+        <article class="slider">
+            <div id="gallery_wrap">
+                <ul class="slide_gallery">
+                    <li>
+                        <img src="./images/p_images/p_slider.jpg" alt="Slide Image1" class="phone_slider">
+                        <img src="./images/p_images/m_slider.jpg" alt="Slide Image1" class="mobile_slider">
+                        <img src="./images/p_images/slider.jpg" alt="Slide Image1" class="pc_slider">
+                    </li>
+                    <li>
+                        <img src="./images/p_images/p_slider2.jpg" alt="Slide Image1" class="phone_slider">
+                        <img src="./images/p_images/m_slider2.jpg" alt="Slide Image2" class="mobile_slider">
+                        <img src="./images/p_images/slider2.jpg" alt="Slide Image1" class="pc_slider">
+                    </li>
+                    <li>
+                        <img src="./images/p_images/p_slider3.jpg" alt="Slide Image1" class="phone_slider">
+                        <img src="./images/p_images/m_slider3.jpg" alt="Slide Image3" class="mobile_slider">
+                        <img src="./images/p_images/slider3.jpg" alt="Slide Image1" class="pc_slider">
+                    </li>
+                    <li>
+                        <img src="./images/p_images/p_slider4.jpg" alt="Slide Image1" class="phone_slider">
+                        <img src="./images/p_images/m_slider4.jpg" alt="Slide Image4" class="mobile_slider">
+                        <img src="./images/p_images/slider4.jpg" alt="Slide Image1" class="pc_slider">
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <!-- /2. Slider -->
+
+        <!-- 3. Contents -->
+        <main role="main">
+            <section class="content">
+                <!-- 3-1 Display -->
+                <section class="display_section container cf">
+                    <h2 class="sec_title">BEST</h2>
+                    <!-- 3-2. PC-Best -->
+                    <section class="pc_best_section">
+                        <h2>
+                            <ul class="best_list cf">
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/s_images/best1.jpg" alt="Best Product1">
+                                        <h3>라라(LaLa) 여성반지갑 라벤더</h3>
+                                        <p>
+                                            134,590원
+                                        </p>
+                                        <p>
+                                            218,000원
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/s_images/best2.jpg" alt="Best Product2">
+                                        <h3>포쉬(Poche) 핸드폰 크로스백</h3>
+                                        <p>
+                                            165,810원
+                                        </p>
+                                        <p>
+                                            188,000원
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/s_images/best3.jpg" alt="Best Product3">
+                                        <h3>미니캐비어 마이크로백 블루</h3>
+                                        <p>
+                                            245,720원
+                                        </p>
+                                        <p>
+                                            398,000원
+                                        </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./images/s_images/best4.jpg" alt="Best Product4">
+                                        <h3>르나타(RENATA) 토트백</h3>
+                                        <p>
+                                            682,200원
+                                        </p>
+                                        <p>
+                                            758,000원
+                                        </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </h2>
+                    </section>
+                    <!-- /3-2. PC-Best -->
+                </section>
+                <!-- /3-1 Display -->
+
+                <!-- 3-2. Best -->
+                <section class="best_section container">
+                    <h2 class="swiper-container">
+                        <ul class="best_list swiper-wrapper cf">
+                            <li class="swiper-slide slide1">
+                                <a href="#">
+                                    <img src="./images/s_images/best1.jpg" alt="Best Product1">
+                                    <h3>라라(LaLa) 여성반지갑 라벤더</h3>
+                                    <p>
+                                        218,000원
+                                    </p>
+                                    <p>
+                                        134,590원
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide2">
+                                <a href="#">
+                                    <img src="./images/s_images/best2.jpg" alt="Best Product2">
+                                    <h3>포쉬(Poche) 핸드폰 크로스백</h3>
+                                    <p>
+                                        165,810원
+                                    </p>
+                                    <p>
+                                        188,000원
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide3">
+                                <a href="#">
+                                    <img src="./images/s_images/best3.jpg" alt="Best Product3">
+                                    <h3>미니캐비어 마이크로백 블루</h3>
+                                    <p>
+                                        245,720원
+                                    </p>
+                                    <p>
+                                        398,000원
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="swiper-slide slide4">
+                                <a href="#">
+                                    <img src="./images/s_images/best4.jpg" alt="Best Product4">
+                                    <h3>르나타(RENATA) 토트백</h3>
+                                    <p>
+                                        682,200원
+                                    </p>
+                                    <p>
+                                        758,000원
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </h2>
+                </section>
+                <!-- /3-2. Best -->
+
+                <!-- 3-3. New -->
+                <section class="new_section">
+                   <div class="cf">
+                        <h2 class="sec_title container">NEW</h2>
+                        <ul class="new_list">
+                            <li>
+                                <a href="#new1">
+                                    <div id="new1">
+                                        <h3>엘퀼팅 미니<br>
+                                            (L-Quilting Mini) 크로스백</h3>
+                                        <span>328,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new1.jpg" alt="New product1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#new2">
+                                    <div id="new2">
+                                        <h3>디퀼팅(D-QUILTING)<br>
+                                            여성 숄더백</h3>
+                                        <span>538,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new2.jpg" alt="New product2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#new3">
+                                    <div id="new3">
+                                        <h3>1980 모노그램<br>
+                                            핸드폰 크로스백</h3>
+                                        <span>390,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new3.jpg" alt="New product3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#new4">
+                                    <div id="new4">
+                                        <h3>엘퀼팅(L-Quilting)<br>
+                                            여성 클러치백</h3>
+                                        <span>328,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new4.jpg" alt="New product4">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#new5">
+                                    <div id="new5">
+                                        <h3>빅앤볼드(Big&Bold)<br> 숄더백</h3>
+                                        <span>820,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new5.jpg" alt="New product5">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#new6">
+                                    <div id="new6">
+                                        <h3>몬트(Monte)<br>
+                                            크로스백</h3>
+                                        <span>388,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new6.jpg" alt="New product6">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#new7">
+                                    <div id="new7">
+                                        <h3>헤리티지(Heritage)<br>
+                                            토트백</h3>
+                                        <span>598,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new7.jpg" alt="New product7">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#new8">
+                                    <div id="new8">
+                                        <h3>치즈(Cheese)<br>
+                                            미디엄 토트백</h3>
+                                        <span>970,000원</span>
+                                    </div>
+                                    <img src="./images/s_images/new8.jpg" alt="New product8">
+                                </a>
+                            </li>
+                        </ul>
+                   </div>
+                </section>
+                <!-- /3-3. New -->
+                
+                <!-- 3-4. Recommended -->
+                <section class="recom_section container">
+                    <div class="cf safe_area">
+                        <h2 class="sec_title">RECOMMENDED</h2>
+                        <ul class="recom_list">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/s_images/recom1.jpg" alt="Recommended product1">
+                                    <div class="txt">
+                                        <h4>HQ1QT11IV</h4>
+                                        <h3>루이까또즈 숄더백</h3>
+                                        <p>438,000원</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/s_images/recom2.jpg" alt="Recommended product2">
+                                    <div class="txt">
+                                        <h4>SQ1FM04SK</h4>
+                                        <h3>마레(MARE) 여성명함지갑</h3>
+                                        <p>188,000원</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/s_images/recom3.jpg" alt="Recommended product3">
+                                    <div class="txt">
+                                        <h4>HM1TL01BL</h4>
+                                        <h3>루이까또즈 백팩</h3>
+                                        <p>488,000원</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- /3-4. Recommended -->
+                
+                <!-- 3-5. Contact -->
+                <section class="contact_section container">
+                    <div class="cf">
+                        <h2 class="sec_title">CONTACT</h2>
+                        <form action="#" class="form_box">
+                            <fieldset class="cf">
+                                <legend class="blind">CONTACT&nbsp;US</legend>
+                                <!-- Input Form -->
+                                <div class="form">
+                                    <label for="name" class="blind"> Name</label>
+                                    <input type="text" id="name" placeholder="Name" required autocomplete="off">
+                                    <label for="phone" class="blind"> Phone</label>
+                                    <input type="tel" id="phone" placeholder="Phone" required autocomplete="off">
+                                    <label for="email" class="blind"> E-mail</label>
+                                    <input type="email" id="email" placeholder="E-mail Address" required autocomplete="off">
+                                </div>
+                                <!-- /Input Form -->
+                                <!-- Textarea Form -->
+                                <div class="txta">
+                                    <label for="message" class="blind"> Message</label>
+                                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                                </div>
+                                <!-- /Textarea Form -->
+                            </fieldset>
+                            <!-- Button -->
+                            <div class="send_btn">
+                                <button type="submit">SEND MESSAGE</button>
+                            </div>
+                            <!-- /Button -->
+                        </form>
+                    </div>
+                </section>
+                <!-- /3-5. Contact -->
+            </section>
+        </main>
+        <!-- /3. Contents -->
+
+        <!-- 4. Footer -->
+        <footer class="footer"> 
+        </footer>
+        <!-- /4. Footer -->
+    </div>
+</body>
+</html>
+<!-- 스와이퍼 제이쿼리 플러그인 -->
+<script src="./js/swiper-bundle.js"></script>
+<script src="./js/swiper.js"></script>
