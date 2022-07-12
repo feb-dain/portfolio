@@ -81,7 +81,7 @@ ul.bxslider {
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
   /* pager 색깔 변경 */
-  background: #acacac;
+  background: silver;
   text-indent: -9999px;
   display: block;
   /* pager 크기 변경 */
