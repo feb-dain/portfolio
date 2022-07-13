@@ -312,7 +312,7 @@ input,textarea {
 .send_btn button {
     font-size: 1.2rem;
     color: #fff;
-    background: #3f3f3f;
+    background: #222;
     padding: 15px;
     cursor: pointer;
 }
