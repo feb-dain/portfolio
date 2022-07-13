@@ -1,0 +1,1143 @@
+@charset "utf-8";
+/* 기본 CSS */
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Montserrat', 'IBM Plex Sans KR', serif;
+}
+/* 지정 너비 적용 클래스 */
+.p14 {
+    padding: 0 14px;
+}
+.container {
+    max-width: 1132px;
+    margin: 0 auto;
+}
+/* 각 박스 타이틀 클래스 */
+.sec_title {
+    font-size: 1.9rem;
+    color: #222;
+    font-weight: 600;
+}
+/* 모바일 퍼스트 */
+/* 공통 CSS */
+.header {
+    padding: 16px 16px;
+    /* 위치기준값 */
+    position: relative;
+}
+.header .logo img {
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 23.4%;
+    margin-right: 16%;
+    text-align: center;
+    /* 플롯 */
+    float: left;
+}
+.header .icons i {
+    color: #222;
+    font-size: 20px;
+    float: right;
+    margin-left: 9px;
+    cursor: pointer;
+}
+.header .icons a i {
+    padding-top: 0.4px
+}
+.header .icons a+i {
+    padding-top: 2px;
+    font-size: 19px;
+}
+
+/* GNB */
+.header .gnb {
+    width: 100%;
+    background: #fff;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 99999999;
+
+    /* 로딩시 가려지도록 */
+    display: none;
+}
+
+.header .gnb li {
+    border-bottom: 1px solid #cdd1d8;
+}
+.header .gnb li a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 14px 0 14px 5%;
+}
+
+/* Hambuger Toggle */
+header .menu_toggle_btn {
+    width: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+    /* 플롯 */
+    float: left;
+}
+header .menu_toggle_btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #222;
+}
+header .menu_toggle_btn span:nth-child(2) {
+    margin: 5px 0;
+}
+
+/* 3. Contents */
+/* 3-1. 모바일 Display */
+.display_section {
+    text-align: center;
+}
+
+/* 3-2. Best */
+.best_section,
+.pc_best_section {
+    margin-top: 28px;
+}
+.best_section .best_list li,
+.pc_best_section .best_list li {
+    text-align: center;
+}
+.best_section .best_list li img,
+.pc_best_section .best_list li img {
+    width: 92.4%;
+    border: 1px solid #222;
+}
+.best_section .best_list li h3,
+.pc_best_section .best_list li h3,
+.best_section .best_list li p,
+.pc_best_section .best_list li p {
+    text-align: left;
+    padding-left: 14px;
+
+}
+
+.best_section .best_list li h3,
+.pc_best_section .best_list li h3 {
+    margin: 14px 0;
+    color: #424242;
+    font-size: 1.3rem;
+    letter-spacing: -0.01em;
+}
+.best_section .best_list li p,
+.pc_best_section .best_list li p {
+    font-size: 1.4rem;
+    color: #3e3e3e;
+    line-height: 1.4;
+    font-weight: 600;
+}
+.best_section .best_list li p:nth-child(4),
+.pc_best_section .best_list li p:nth-child(4) {
+    font-size: 1.1rem;
+    color: #9e9e9e;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+.pc_best_section {
+    display: none;
+}
+
+/* 3-3. New */
+.new_section {
+    margin-top: 108px;
+}
+.new_section .sec_title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.new_section .new_list li {
+    width: 100%;
+}
+.new_section .new_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.new_section .new_list li a img {
+    max-width: 100%;
+    width: 100%;
+    transition-duration: 1s;
+}
+
+/* 이미지 정보 효과 */
+.new_section .new_list li a {
+    /* 위치기준 */
+    position: relative;
+}
+.new_section .new_list li a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: silver;
+    opacity: 0;
+    /* 트랜지션은 원본에! */
+    transition: all 0.3s;
+}
+.new_section .new_list li a:hover::before {
+    opacity: 0.7;
+}
+.new_section .new_list li a:hover img {
+    transform: scale(1.4, 1.4);
+    transition-duration: 1.6s;
+}
+
+/* 텍스트 CSS */
+.new_section .new_list li div>h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+.new_section .new_list li div>span {
+    font-size: 2.5rem;
+    color: #fff;
+}
+/* 텍스트 이동 효과 */
+.new_section .new_list li div {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    z-index: 200;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.new_section .new_list li a:hover div {
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+/* 3-4. Recommended */
+.recom_section {
+    margin-top: 114px;
+}
+.recom_section .sec_title {
+    margin-bottom: 28px;
+    text-align: center;
+}
+.recom_section .recom_list {
+    margin: 0 14px;
+}
+.recom_section .recom_list li {
+    width: 100%;
+    margin-top: 48px;
+}
+.recom_section .recom_list li .txt {
+    margin: 0 8px;
+}
+.recom_section .recom_list li:nth-child(1) {
+    margin-top: 0;
+}
+.recom_section .recom_list li img {
+    max-width: 100%;
+    width: 100%;
+}
+/* Recommended Image Hover */
+.recom_section .recom_list li a {
+    /* 위치기준값 */
+    position: relative;
+}
+.recom_section .recom_list li a .recom_side {
+    display: none;
+}
+.recom_section .recom_list li a:hover .recom_side {
+    display: block;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.recom_section .recom_list li h4 {
+    font-size: 1.2rem;
+    color: #9e9e9e;
+    margin: 14px 0 8px;
+}
+.recom_section .recom_list li h3 {
+    font-size: 1.6rem;
+    color: #424242;
+    margin-bottom: 20px;
+}
+.recom_section .recom_list li p {
+    font-size: 1.8rem;
+    color: #3e3e3e;
+    font-weight: 600;
+}
+
+/* 3-5. 모바일 contact */
+.contact_section {
+    margin-top: 180px;
+    padding: 0 14px;
+}
+.contact_section .sec_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+input,textarea {
+    border-bottom: 1px solid #757575;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+}
+/* Input Form */
+.form input {
+    padding-bottom: 14px;
+    margin-bottom: 40px;
+}
+/* Textarea Form */
+.txta textarea {
+    height: 170px;
+}
+/* Button */
+.send_btn {
+    margin-top: 36px;
+    text-align: right;
+}
+.send_btn button {
+    font-size: 1.2rem;
+    color: #fff;
+    background: #222;
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* 4. Footer */
+.footer {
+    margin-top: 100px;
+    background: #000;
+}
+.footer iframe {
+    width: 100%;
+    height: 320px;
+}
+.footer p {
+    color: #dfdfdf;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* 추가코딩, 슬라이더 */
+.slide_gallery .mobile_slider {
+    display: none;
+}
+.slide_gallery .pc_slider {
+    display: none;
+}
+/* 구글 맵 스크롤 방지 */
+.footer {
+    position:relative;
+    }
+    .footer::after{
+    background: none;
+    content: " ";
+    display: inline-block;
+    font-size: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+
+
+
+
+/* 태블릿 미디어쿼리 768px 이상 */
+@media screen and (min-width:768px){
+    .header {
+        padding: 16px 24px 16px 28px;
+        /* 위치기준값 */
+        position: relative;
+    }
+    .header .logo {
+        margin: auto;
+        text-align: center;
+        padding-left: 39%;
+        /* 플롯 */
+        float: left;
+    }
+    .header .logo img {
+        margin-top: 4.1px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header .icons i {
+        color: #222;
+        float: right;
+        margin-left: 1.8%;
+    }
+    .header .icons i {
+        margin-top: -0.2px;
+    }
+    .header .icons i:nth-child(2) {
+        font-size: 18px;
+        margin-top: -0.5px;
+    }
+    /* Slider */
+    .slide_gallery li img {
+        position: relative;
+    }
+    .banner_txt1 {
+        position: absolute;
+        left: 51%;
+        top: 26%;
+        z-index: 2;
+        text-align: center;
+    }
+    .banner_txt1 h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 10%;
+    }
+    .banner_txt1 p {
+        font-size: 1.8rem;
+        margin-bottom: 4%;
+    }
+    .banner_txt1 p:last-child {
+        font-size: 1.6rem;
+        margin: 0 auto;
+        margin-top: 12.2%;
+        width: 50%;
+        color: #fff;
+        padding: 5%;
+        text-align: center;
+        background: #000;
+    }
+    .banner_txt2 {
+        color: #fff;
+        text-align: left;
+        position: absolute;
+        left: 52%;
+        top: 30.5%;
+        z-index: 2;
+    }
+    .banner_txt2 h2 {
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 16%;
+    }
+    .banner_txt2 p:nth-child(1) {
+        font-size: 1.6rem;
+        margin-bottom: 4%;
+    }
+    .banner_txt2 P:last-child {
+        font-size: 1.6rem;
+        width: 60%;
+        margin: 0;
+        text-align: center;
+        padding: 4%;
+        border: 1px solid #fff;
+    }
+    .banner_txt3 {
+        color: #fff;
+        position: absolute;
+        left: 14%;
+        top: 31%;
+        z-index: 2;
+    }
+    .banner_txt3 h2 {
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 5%;
+    }
+    .banner_txt3 p:nth-child(2) {
+        font-size: 1.6rem;
+        margin-bottom: 17%;
+    }
+    .banner_txt3 P:last-child {
+        font-size: 1.6rem;
+        width: 65%;
+        text-align: center;
+        padding: 4%;
+        border: 1px solid #fff;
+    }
+    .banner_txt4 {
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 33%;
+        z-index: 2;
+    }
+    .banner_txt4 p:nth-child(1) {
+        margin-bottom: 4%;
+        font-size: 1.6rem;
+    }
+    .banner_txt4 h2 {
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 15%;
+    }
+    .banner_txt4 P:last-child {
+        font-size: 1.4rem;
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 4%;
+        border: 1px solid #fff;
+    }
+
+    /* 3-2. Best  */
+    .display_section {
+        margin-top: 10px;
+    }
+    .pc_best_section .best_list {
+        margin: 0 24px;
+    }
+    .pc_best_section .best_list li {
+        margin-top: 0;
+        width: 24.22%;
+        margin-right: 1.04%;
+        /* 플롯 */
+        float: left;
+    }
+    .pc_best_section .best_list li:last-child {
+        margin-right: 0;
+    }
+    .pc_best_section .best_list li img {
+        width: 100%;
+    }
+    .pc_best_section .best_list li h3 {
+        margin: 14px 0 10px;
+        color: #222;
+        font-size: 1.3rem;
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        padding-left: 6px;
+    }
+    .pc_best_section .best_list li p {
+        padding-left: 6px;
+    }
+    .best_section {
+        display: none;
+    }
+    .pc_best_section {
+        display: block;
+    }
+
+    /* 3-3. New */
+    .new_section {
+        margin-top: 124px;
+    }
+    .new_section .sec_title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    .new_section .new_list li {
+        width: 50%;
+        /* 플롯 */
+        float: left;
+    }
+    .new_section .new_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .new_section .new_list li a img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 이미지 정보 효과 */
+    .new_section .new_list li a {
+        /* 위치기준 */
+        position: relative;
+    }
+    .new_section .new_list li a::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* 포지션 */
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        opacity: 0;
+        /* 트랜지션은 원본에! */
+        transition: all 0.3s;
+    }
+    .new_section .new_list li a:hover::before {
+        opacity: 0.7;
+    }
+
+    /* 텍스트 이동 효과 */
+    .new_section .new_list li div {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        z-index: 200;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .new_section .new_list li a:hover div {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    /* 3-4. Recommended */
+    .recom_section {
+        margin-top: 124px;
+    }
+    .recom_section .sec_title {
+        margin-bottom: 34px;
+        text-align: center;
+    }
+    .recom_section .recom_list{
+        margin: 0 24px;
+    }
+    .recom_section .recom_list li {
+        margin-top: 0;
+        width: 242.6666666666667px;
+        width: 31.5972%;
+        margin-left: 20px;
+        margin-left: 2.604167%;
+        float: left;
+
+    }
+    .recom_section .recom_list li:nth-child(1) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .recom_section .recom_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .recom_section .recom_list li time {
+        display: block;
+        font-size: 1.2rem;
+        color: #9e9e9e;
+        margin: 10px 0;
+    }
+    .recom_section .recom_list li h3 {
+        font-size: 1.6rem;
+        color: #424242;
+        line-height: 1.6;
+    }
+
+    /* 3-5. 태블릿 contact */
+    .contact_section {
+        margin-top: 180px;
+    }
+    .contact_section .sec_title {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    input,textarea {
+        border-bottom: 1px solid #757575;
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #222;
+    }
+    /* Input Form */
+    .form {
+        width: 374px;
+        width: 48.697917%;
+        margin-right: 20px;
+        margin-right: 2.604167%;
+        /* 플롯 */
+        float: left;
+    }
+    .txta {
+        width: 374px;
+        width: 48.697917%;
+        /* 플롯 */
+        float: right;
+    }
+    .form input {
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+    }
+    /* Textarea Form */
+    .txta textarea {
+        height: 192.7px;
+    }
+    /* Button */
+    .send_btn {
+        margin-top: 4px;
+        text-align: right;
+    }
+    .send_btn button {
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    /* 4. Footer */
+    .footer {
+        margin-top: 100px;
+    }
+    .footer iframe {
+        width: 100%;
+        height: 320px;
+    }
+    .footer p {
+        color: darkgray;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    /* 추가 */
+    .slide_gallery .phone_slider {
+        display: none;
+    }
+    .slide_gallery .mobile_slider {
+        display: block;
+    }
+}
+
+
+
+
+/* PC 미디어쿼리 1132px 이상 */
+@media screen and (min-width:1132px){
+    .header {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        /* 위치기준값 */
+        position: relative;
+    }
+    .display_section {
+        margin-top: 100px;
+        text-align: left;
+    }
+    .display_section .sec_title {
+        width: 14%;
+        margin: 0 auto;
+        text-align: left;
+        /* 플롯 */
+        float: left;
+    }
+    .header {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header .logo {
+        padding-left: 0;
+    }
+    .header .logo {
+        margin: auto;
+        text-align: center;
+    }
+    .header .logo img {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        margin-top: 7px;
+    }
+    .header .icons i {
+        color: #222;
+        float: right;
+        margin-left: 10.2%;
+    }
+    .header .icons a>i {
+        padding-top: 1px;
+    } 
+    .header .icons i:nth-child(2) {
+        font-size: 19px;
+        margin-top: 0.1px;
+    }
+    /* GNB */
+    .header .gnb {
+        /* 모바일 속성값 초기화 */
+        width: auto;
+        background: none;
+        /* 포지션 */
+        position: static;
+        display: block !important;
+        /* 플롯 */
+        float: right;
+        /* gnb 위치 */
+        margin-right: 8px;
+    }
+    
+    .header .gnb li {
+        border-bottom: 0;
+        /* 플롯 */
+        float: left;
+        margin-right: 20px;
+    }
+    .header .gnb li:last-child {
+        margin-right: 30px;
+    }
+    .header .gnb li a {
+        display: block;
+        padding: 0;
+        line-height: 2.6rem;
+        /* font-size: 1.2rem; */
+    }
+    .header .icons i {
+        margin-left: 16px;
+    }
+    
+    /* Hambuger Toggle */
+    header .menu_toggle_btn {
+        width: 20px;
+        margin-top: 4px;
+        cursor: pointer;
+        /* 플롯 */
+        float: right;
+        display: none;
+    }
+    header .menu_toggle_btn span {
+        display: block;
+        width: 100%;
+        height: 2px;
+    }
+    header .menu_toggle_btn span:nth-child(2) {
+        margin: 5px 0;
+    }
+    
+    .display_section {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .display_section .sec_title {
+        margin-bottom: 34px;
+    }
+    
+    /* Slider */
+    .slide_gallery li img {
+        position: relative;
+    }
+    .banner_txt1 {
+        position: absolute;
+        left: 53%;
+        top: 26%;
+        z-index: 2;
+        text-align: center;
+    }
+    .banner_txt1 h2 {
+        font-size: 8rem;
+        font-size: 6vh;
+        font-weight: 700;
+        margin-bottom: 12%;
+    }
+    .banner_txt1 p {
+        font-size: 3.8rem;
+        font-size: 3vh;
+        margin-bottom: 4%;
+    }
+    .banner_txt1 p:last-child {
+        font-size: 1.8rem;
+        font-size: 1.8vh;
+        margin: 0 auto;
+        margin-top: 15%;
+        width: 50%;
+        color: #fff;
+        padding: 5%;
+        text-align: center;
+        background: #000;
+    }
+    .banner_txt2 {
+        color: #fff;
+        text-align: left;
+        position: absolute;
+        left: 14%;
+        top: 30.5%;
+        z-index: 2;
+    }
+    .banner_txt2 h2 {
+        font-size: 7rem;
+        font-size: 7vh;
+        font-weight: 500;
+        margin-bottom: 18%;
+    }
+    .banner_txt2 p:nth-child(1) {
+        font-size: 3.2rem;
+        font-size: 3vh;
+        margin-bottom: 4%;
+    }
+    .banner_txt2 P:last-child {
+        font-size: 2rem;
+        font-size: 2vh;
+        width: 60%;
+        margin: 0;
+        text-align: center;
+        padding: 4%;
+        border: 1px solid #fff;
+    }
+    .banner_txt3 {
+        color: #fff;
+        position: absolute;
+        left: 20%;
+        top: 31.5%;
+        left: 0;
+        top: 0;
+
+        z-index: 2;
+    }
+    .banner_txt3 h2 {
+        font-size: 8rem;
+        font-size: 7vh;
+        font-weight: 500;
+        margin-bottom: 5%;
+    }
+    .banner_txt3 p:nth-child(2) {
+        font-size: 3.8rem;
+        font-size: 3vh;
+        margin-bottom: 17%;
+    }
+    .banner_txt3 P:last-child {
+        font-size: 2rem;
+        font-size: 2vh;
+        width: 65%;
+        text-align: center;
+        padding: 4%;
+        border: 1px solid #fff;
+    }
+    .banner_txt4 {
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 35%;
+        z-index: 2;
+    }
+    .banner_txt4 p:nth-child(1) {
+        margin-bottom: 4%;
+        font-size: 2.8rem;
+        font-size: 2.4vh;
+    }
+    .banner_txt4 h2 {
+        font-size: 8rem;
+        font-size: 6vh;
+        font-weight: 500;
+        margin-bottom: 15.5%;
+    }
+    .banner_txt4 P:last-child {
+        font-size: 2rem;
+        font-size: 2vh;
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 4%;
+        border: 1px solid #fff;
+    }
+
+    /* 3-2. Best  */
+    .pc_best_section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .pc_best_section .best_list {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .pc_best_section .best_list li {
+        width: 20.7%;
+        margin-left: 0;
+        /* 플롯 */
+        float: left;
+    }
+    .pc_best_section .best_list li h3 {
+        padding-left: 8px;
+    }
+    .pc_best_section .best_list li p {
+        padding-left: 8px;
+    }
+
+    /* 3-3. New */
+    .new_section {
+        margin-top: 124px;
+    }
+    .new_section .sec_title {
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 28px;
+    }
+
+    .new_section .new_list li {
+        width: 25%;
+        /* 플롯 */
+        float: left;
+    }
+    .new_section .new_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .new_section .new_list li a img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 이미지 정보 효과 */
+    .new_section .new_list li a {
+        /* 위치기준 */
+        position: relative;
+    }
+    .new_section .new_list li a::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        /* 포지션 */
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        opacity: 0;
+        /* 트랜지션은 원본에! */
+        transition: all 0.3s;
+    }
+    .new_section .new_list li a:hover::before {
+        opacity: 0.7;
+    }
+
+
+    /* 텍스트 이동 효과 */
+    .new_section .new_list li div {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        z-index: 200;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .new_section .new_list li a:hover div {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    /* 3-4. Recommended */
+    .recom_section {
+        margin-top: 124px;
+    }
+    .recom_section .sec_title {
+        width: 24.4%;
+        margin-bottom: 0;
+        text-align: left;
+        /* 플롯 */
+        float: left;
+    }
+    .recom_section .recom_list {
+        width: 74.5%;
+        margin: 0 0;
+        /* 플롯 */
+        float: right;
+    }
+    .recom_section .recom_list li {
+        margin-top: 0;
+        width: 268px;
+        width: 31.753555%;
+        margin-left: 20px;
+        margin-left: 2.369668%;
+        /* 플롯 */
+        float: left;
+    }
+    .recom_section .recom_list li:nth-child(1) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .recom_section .recom_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .recom_section .recom_list li time {
+        display: block;
+        font-size: 1.2rem;
+        color: #9e9e9e;
+        margin: 10px 0;
+    }
+    .recom_section .recom_list li h3 {
+        font-size: 1.6rem;
+        color: #424242;
+        line-height: 1.6;
+    }
+
+    /* 3-5. PC contact */
+    .contact_section {
+        margin-top: 180px;
+        padding: 0;
+    }
+    .contact_section .sec_title {
+        margin-bottom: 0;
+        /* 플롯 */
+        float: left;
+    }
+    input,textarea {
+        border-bottom: 1px solid #757575;
+        font-size: 1.2rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #222;
+    }
+    /* Input Form */
+    .form_box {
+        width: 844px;
+        /* width: 74.558304%; */
+        /* 플롯 */
+        float: right;
+    }
+    .form {
+        width: 412px;
+        width: 48.815166%;
+        margin-right: 20px;
+        margin-right: 2.369668%;
+        /* 플롯 */
+        float: left;
+    }
+    .txta {
+        width: 412px;
+        width: 48.815166%;
+        /* 플롯 */
+        float: right;
+    }
+    .form input {
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+    }
+    /* Textarea Form */
+    .txta textarea {
+        height: 192.7px;
+    }
+    /* Button */
+    .send_btn {
+        text-align: right;
+    }
+    .send_btn button {
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    /* 추가 */
+    .slide_gallery .pc_slider {
+        display: block;
+    }
+    .slide_gallery .mobile_slider {
+        display: none;
+    }
+    .slide_gallery .phone_slider {
+        display: none;
+    }
+}
+
