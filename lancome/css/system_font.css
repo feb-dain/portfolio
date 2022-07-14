@@ -1,0 +1,28 @@
+/* 각 OS 마다 시스템 폰트가 있다 */
+/* system fonts apple 사용 */
+body {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* system fonts 기본 사용 */
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+/* system 폰트 설정 */
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local("./font/SFNSText-Light.ttf"), 
+    local("./font/HelveticaNeueDeskInterface-Light.ttf"), 
+    local("./font/LucidaGrandeUI.ttf"), local("./font/Ubuntu-Light.ttf"),
+    local("./font/SegoeUILight.ttf"), 
+    local("./font/Roboto-Light.ttf"), 
+    local("./font/DroidSans.ttf"), 
+    local("./font/Tahoma.ttf")
+}
+
+/* font-face 적용 */
+body {
+    font-family: system;
+}
