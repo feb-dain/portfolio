@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="dainlee">
+    <meta name="discription" content="portfolio, movie_Otbital">
+    <title>MOVIE ORBITAL</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/reset.css">
+       
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/orbital.css">
+
+    <!-- 조건부주석 -->
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="./js/respond.src.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/PIE.js"></script><![endif]-->
+
+    <!-- 제이쿼리 코어 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 제이쿼리 플러그인 파일 -->
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/a9f8e9bd30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- Video Background -->
+        <figure class="video_wrapper">
+            <video class="video" autoplay loop muted>
+                <source src="./media/trailer.mp4" type="video/mp4">
+            </video>
+            <!-- Video Control Button -->
+            <button id="car_btn">
+                <i class="fa fa-pause-circle-o" aria-hidden="true"></i>
+            </button>
+            <button id="car_sound">
+                <i class="fa fa-volume-off" aria-hidden="true"></i>
+            </button>
+            <!-- /Video Control Button -->
+            <!-- Image Text -->
+            <div class="video_text">
+                <h2>
+                    WATCH<br>
+                    THE NEW TRAILER OF<br>
+                    <span>MY Sci-Fi MOVIE ORBITAL</span>
+
+                </h2>
+                <p>
+                    Peter Randof uses his wealth to construct a massive ring around Earth...
+                </p>
+                <div class="btn">
+                    GET TICKET
+                </div>
+            </div>
+            <!-- /Image Text -->
+        </figure>
+        <!-- /Video Background -->
+
+        <!-- Header -->
+        <header class="header maxw1440">
+            <h1>Orbital</h1>
+            <nav class="gnb_wrap">
+                <ul class="gnb">
+                    <li><a href="#">TRAILER</a></li>
+                    <li><a href="#">DIRECTOR</a></li>
+                    <li><a href="#">TOP CAST</a></li>
+                    <li><a href="#">DETAILS</a></li>
+                    <li class="no_pr"><a href="#">STORYLINE</a></li>
+                </ul>
+            </nav>
+            <nav class="snb_wrap">
+                <ul class="snb">
+                    <li><a href="#">CONTACT&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">FAQ&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+                    <li><a href="#">HELP&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="#">KR</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- /Header -->
+    </div>
+
+    <script src="./js/orbital.js"></script>
+</body>
+</html>

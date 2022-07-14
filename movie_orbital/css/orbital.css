@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* Viewport 가변단위 */
+/* 1920(vw): 내 마음 속의 기준값 x 936(vh) */
+
+* {
+    background-color: transparent !important;
+}
+.maxw1440 {
+    max-width: 1440px;
+    /* (1440/1920)*100= 75*/
+    width: 75vw;
+    margin: 0 auto;
+}
+body, html {
+    font-size: 16px;
+    /* (16/936)*100=1.709402 */
+    font-size: 1.709402vh;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap {
+    width: 100vw;
+    height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+}
+/* Video  */
+.video_wrapper {
+    width: 100vw;
+    height: 100vh;
+    /* 포지션 */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.video_wrapper video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: fill;
+}
+
+/* Video Control Button */
+#car_btn {
+    /* 포지션 */
+    position: absolute;
+    left: 48px;
+    /* (48/1920)*100=2.5 */
+    left: 15.4vw;
+    bottom: 56px;
+    /* (56/936)*100=5.982906 */
+    bottom: 6vh;
+    z-index: 10;
+}
+#car_btn i {
+    font-size: 24px;
+    /* (24/936)*100=2.564103 */
+    font-size: 2.564103vh;
+    color: #fff;
+    cursor: pointer;
+}
+#car_sound {
+    /* 포지션 */
+    position: absolute;
+    left: 96px;
+    /* (96/1920)*100=5 */
+    left: 18vw;
+    bottom: 56px;
+    /* (56/936)*100=5.982906 */
+    bottom: 6vh;
+    z-index: 10;
+}
+#car_sound i {
+    font-size: 24px;
+    /* (24/936)*100=2.564103 */
+    font-size: 2.564103vh;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+/* Image Text */
+.video_text {
+    font-family: 'Roboto', serif;
+    position: absolute;
+    left: 48px;
+    /* (280/1920)*100=14.583333=2.5 */
+    left: 14.583333vw;
+    /* (270/936)*100=28.846154=23.504274=10.683761 */
+    top: 26.4vh;
+    z-index: 20;
+}
+.video_text h2 {
+    font-size: 72px;
+    /* (80/936)*100=8.547009=7.692308 */
+    font-size: 7.7vh;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #fff;
+}
+.video_text h2 span {
+    font-weight: 8vh;
+    font-weight: 700;
+    letter-spacing: -2px;
+    /* color: #1a2a6e; */
+}
+.video_text p {
+    font-size: 21px;
+    /* 21/936*100=2.24359 */
+    font-size: 2.2vh;
+    color: #f0f2f2;
+    font-weight: 300;
+    /* 16/936*100=1.709402 */
+    padding-left: 8px;
+    /* 22/936*100=2.350427 */
+    margin-top: 2.350427px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+.btn {
+    text-align: center;
+    width: 186px;
+    /* 186/1920*100=9.6875 */
+    width: 9.6875vw;
+    /* 80/936*100=8.547009 */
+    height: 80px;
+    height: 8.547009vh;
+    padding: 27.5px 0;
+    /* 27.5/936*100=2.938034 */
+    padding: 2.938034vh 0;
+    margin: 3.846154vh 0 0;
+    /* 36/936*100=3.846154 */
+    font-size: 2.2vh;
+    font-weight: 500;
+    color: #fff;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+/* Header */
+.header {
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-top: 36px;
+    /* 36/936*100=3.846154 */
+    padding-top: 3.8vh;
+    text-align: center;
+}
+.header h1 {
+    padding-top: 0.42735vh;
+    width: 160px;
+    /* 160/1920*100=8.333333 */
+    width: 8vw;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0 0 2px #eee, 0 0 8px #f0f0f0, 0 0 22px #fff, 0 0 44px #4e64c7,
+    0 0 82px #4e64c7, 0 0 92px #4e64c7, 0 0 102px #4e64c7, 0 0 151px #4e64c7;
+}
+.header .gnb_wrap {
+    font-size: 20px;
+    /* 20/936*100=2.136752 */
+    font-size: 2.1vh;
+    font-weight: 500;
+    /* 4/936*100=0.42735 */
+    padding: 0.42735vh 0 0;
+}
+.header .gnb {
+    display: flex;
+    justify-content: flex-end;
+}
+.header .gnb li {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 40px;
+    /* 40/1920*100=2.083333 */
+    /* 5/936*100=0.534188 */
+    padding: 0.54vh 2vw 0;
+}
+.header .snb_wrap {
+    font-size: 14px;
+    /* 14/936*100=1.495726 */
+    font-size: 1.5vh;
+    padding: 1.5vh 0 0;
+}
+.header .snb {
+    display: flex;
+}
+.header .snb li {
+    padding: 0 8px;
+    /* 8/1920*100=0.416667 */
+    padding: 0 0.4vw;
+    font-weight: 600;
+}
+.header .snb li:last-child {
+    border: 1px solid #fff;
+    font-size: 12px;
+    /* 12/936*100=1.282051 */
+    font-size: 1.3vh;
+    padding: 4px 12px;
+    /* 4/936*100=0.42735 */
+    /* 12/1920*100=0.625 */
+    padding: 0.4vh 0.6vw;
+    margin-top: -4px;
+    margin-top: -0.42735vh;
+}
+.header .snb li a {
+    font-weight: 300;
+}
