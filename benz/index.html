@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="dainlee">
+    <meta name="discription" content="portfolio, Benz">
+    <title>BENZ</title>
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="apple-touch-icon=precomposed" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+       
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/benz.css">
+
+    <!-- 조건부주석 -->
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="./js/respond.src.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/PIE.js"></script><![endif]-->
+
+    <!-- 제이쿼리 코어 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 제이쿼리 플러그인 파일 -->
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/a9f8e9bd30.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- 배경 Video -->
+    <figure class="vid">
+        <!-- MP4 Video -->
+        <video class="video" muted autoplay>
+            <source src="./media/benz.mp4" type="video/mp4">
+        </video>
+        <!-- MP4 Video -->
+        <!-- Video 제어버튼 -->
+        <div class="control_btn">
+            <button id="mute_btn">
+                <i class="fa fa-volume-mute" aria-hidden="true"></i>
+            </button>
+            <button id="pause_btn">
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </button>
+            <button>
+                <i class="fa fa-stop-circle-o" aria-hidden="true"></i>
+            </button>
+        </div>
+        <!-- /Video 제어버튼 -->
+    </figure>
+    <!-- /배경 Video -->
+    <!-- Header 왼쪽메뉴 -->
+    <header>
+        <h1><a href="#"><img src="./images/benz_logo.png" alt="logo"></a></h1>
+        <nav>
+            <ul id="gnb">
+                <li>
+                    <!-- 메뉴 1depth -->
+                    <a href="#"><em>MODEL</em></a>
+                    <!-- /메뉴 1depth -->
+                    <!-- 메뉴 2depth -->
+                    <ul class="snb">
+                        <li><a href="#"><em>Sedan</em></a></li>
+                        <li><a href="#"><em>SUV</em></a></li>
+                        <li><a href="#"><em>Coupé</em></a></li>
+                    </ul>
+                    <!-- /메뉴 2depth -->
+                </li>
+                <li>
+                    <a href="#"><em>PROMOTION</em></a>
+                    <ul class="snb">
+                        <li><a href="#"><em>Financial</em></a></li>
+                        <li><a href="#"><em>Mobility</em></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><em>SERVICES</em></a>
+                    <ul class="snb">
+                        <li><a href="#"><em>Reservation</em></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><em>DIGITAL</em></a>
+                    <ul class="snb">
+                        <li><a href="#"><em>APP</em></a></li>
+                        <li><a href="#"><em>Assistant</em></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><em>STORE</em></a>
+                    <ul class="snb">
+                        <li><a href="#"><em>Accessory</em></a></li>
+                        <li><a href="#"><em>Collection</em></a></li>
+                    </ul>
+                </li>
+
+                <!-- Hover 시 이슈해결 -->
+                <li>
+                    <a href="#"></a>
+                    <ul class="snb">
+                        <li></li>
+                    </ul>
+                </li>
+                <!-- /Hover 시 이슈해결 -->
+            </ul>
+        </nav>
+    </header>
+    <!-- /Header 왼쪽메뉴 -->
+
+    <!-- 우측상단 SNS -->
+    <nav>
+        <ul id="sns">
+            <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+            <!-- <li><a href="#"><i class="fa fa-android" aria-hidden="true"></i></a></li> -->
+        </ul>
+    </nav>
+    <!-- /우측상단 SNS -->
+
+    <!-- 이미지 텍스트 -->
+    <section class="txt">
+        <p class="p1">
+            This is for New<br>
+            Dimensions
+        </p>
+        <p class="p2">
+            새로운 차원의 패밀리 전기 SUV, The new EQB &nbsp;
+        </p>
+    </section>
+    <!-- /이미지 텍스트 -->
+
+    <!-- 우측하단 호버 버튼 -->
+    <section id="side">
+        <!-- 이미지 버튼 -->
+        <h3 class="inner">
+            <p>
+                <em>News &amp; Event</em>
+                <a href="#"><img src="./images/pic1.png" alt="버튼1"></a>
+            </p>
+            <p>
+                <em>AMG Driving Academy</em>
+                <a href="#"><img src="./images/pic2.png" alt="버튼2"></a>
+            </p>
+            <p>
+                <em>Collection</em>
+                <a href="#"><img src="./images/pic3.png" alt="버튼3"></a>
+            </p>
+        </h3>
+        <!-- /이미지 버튼 -->
+        <!-- 애니메이션 화살표 -->
+        <h3 class="arrBtn">
+            <!-- <i class="fa-solid fa-car-side"></i>
+            <i class="fa-solid fa-car-side"></i>
+            <i class="fa-solid fa-car-side"></i> -->
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </h3>
+        <!-- /애니메이션 화살표 -->
+    </section>
+    <!-- /우측하단 호버 버튼 -->
+
+
+
+    <script src="./js/benz.js"></script>
+</body>
+</html>
