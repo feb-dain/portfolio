@@ -194,6 +194,9 @@ header {
     /* 플롯 */
     float: left;
 }
+.logo img {
+    width: 36px;
+}
 .gnb {
     /* 플롯 */
     float: right;
