@@ -310,7 +310,7 @@ header {
 /* 추가코딩 */
 .bottom_gnb {
     float: right;
-    margin-top: 176px;
+    margin-top: 177px;
     font-family: 'Fjalla One',sans-serif;
     color: #fff;
     font-size: 20px;
@@ -326,7 +326,7 @@ header {
 transform: scale(1.2);
 }
 hr {
-    margin-top: 188px;
+    margin-top: 189px;
     float: left;
     background: #fff;
     height: 1px;
