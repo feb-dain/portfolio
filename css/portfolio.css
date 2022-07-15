@@ -195,7 +195,7 @@ header {
     float: left;
 }
 .logo img {
-    width: 36px;
+    padding-top: 2px;
 }
 .gnb {
     /* 플롯 */
