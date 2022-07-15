@@ -20,7 +20,7 @@ h2 .title {
     font-family: 'Fjalla One',sans-serif;
     font-weight: 900;
     letter-spacing: -2px;
-    padding-right: 90px;
+    padding-right: 86px;
     /* display: inline-block; */
     float: left;
     /* text-shadow: 0 0 10px #eee; */
@@ -51,6 +51,23 @@ h2 p>span {
     font-size: 20px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
+}
+.section2 .btn, .btn2 {
+    /* margin-top: 38px; */
+    margin-top: -16px;
+    padding-top: 20px;
+    text-align: center;
+    background: #fda75e;
+    width: 170px;
+    height: 62px;
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn2 {
+    margin-top: 20px;
 }
 .section3 .btn {
     background: #091221;
@@ -228,7 +245,7 @@ header {
     background-size: cover;
 }
 .section2 .sys {
-    padding-top: 110px;
+    padding-top: 120px;
 }
 .home_txt h3 {
     margin-top: 170px;
