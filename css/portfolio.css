@@ -248,7 +248,7 @@ header {
     padding-top: 120px;
 }
 .home_txt h3 {
-    margin-top: 170px;
+    margin-top: 169px;
     color: #fff;
     font-size: 72px;
     font-weight: 800;
@@ -305,4 +305,31 @@ header {
 .section9 {
     background: url('../images/img8.jpg') no-repeat;
     background-size: cover;
+}
+
+/* 추가코딩 */
+.bottom_gnb {
+    float: right;
+    margin-top: 176px;
+    font-family: 'Fjalla One',sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+.bottom_gnb li {
+    /* 플롯 */
+    float: right;
+    margin-left: 50px;
+    transition: all 0.8s;
+    transform: scale(1);
+}
+.bottom_gnb li:hover {
+transform: scale(1.2);
+}
+hr {
+    margin-top: 188px;
+    float: left;
+    background: #fff;
+    height: 1px;
+    width: 80%;
+    opacity: 0.8;
 }
