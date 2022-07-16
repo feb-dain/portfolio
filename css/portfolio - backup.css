@@ -193,8 +193,8 @@ hr {
     padding-top: 23px;
     color: #fff;
 }
-.m_btn, .m_btn2 {
-    margin-top: 68px;
+.m_btn {
+    margin-top: 84px;
     padding-top: 20px;
     text-align: center;
     background: #2e5f1e;
@@ -204,10 +204,6 @@ hr {
     font-size: 20px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-}
-.m_btn2 {
-    margin-left: 30px;
-    background: #ff696d;
 }
 .m_title {
     margin-top: 20px;
@@ -225,10 +221,6 @@ hr {
 }
 .section6 .m_btn {
     background: #ff696d;
-    float: left;
-}
-.section6 .m_btn2 {
-    float: left;
 }
 
 /* VI. Section */
