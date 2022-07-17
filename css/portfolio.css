@@ -1,4 +1,12 @@
 @charset "utf-8";
+html, body {
+    font-family: 'Fjalla One','Noto Sans KR', sans-serif;
+    color: #fff;
+}
+/* 지정 너비 적용 클래스 */
+.m14 {
+    margin: 0 18px;
+}
 .w1440 {
     width: 1440px;
     margin: 0 auto;
@@ -277,4 +285,256 @@ hr {
 .section9 .m_btn {
     margin-top: 50px;
     background: #141416;
+}
+
+/* VIIII. Section */
+.section10 {
+    line-height: 1.4;
+    text-align: left;
+    background: linear-gradient(48deg, #ffc3a0, #ffafbd);
+}
+.section10 h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 4.2%;
+    font-size: 3rem;
+    float: none;
+}
+
+.contact {
+    margin-top: 42px;
+    margin-top: 4%;
+}
+.alt dt {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+.alt dd {
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.message, .contact_wrap {
+    width: 44%;
+    float: left;
+}
+.about {
+    margin-left: 10px;
+    float: right;
+}
+.contact_wrap {
+    width: 30%;
+    float: right;
+}
+
+/* Icons */
+.icons {
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.icons li {
+    display: inline-block;
+    padding: 0 0.65rem 0 0;
+}
+
+ul.icons li:last-child {
+    padding-right: 0 !important;
+}
+
+/* Icon */
+
+.icon {
+    text-decoration: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-bottom: none;
+    position: relative;
+}
+
+.icon:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+.icon > .label {
+    display: none;
+}
+
+.icon:before {
+    line-height: solid;
+}
+
+.icon.solid:before {
+    font-weight: 900;
+}
+
+.icon.brands:before {
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.icon.major {
+    border: solid 1px;
+    display: inline-block;
+    border-radius: 100%;
+    padding: 0.65rem;
+    margin: 0 0 4rem 0;
+    cursor: default;
+}
+
+.icon.major:before {
+    display: inline-block;
+    font-size: 8.6rem;
+    width: 3.1rem;
+    height: 3.1rem;
+    line-height: 3.1rem;
+    border-radius: 100%;
+    border: solid 1px;
+    text-align: center;
+}
+
+.icon.alt {
+    display: inline-block;
+    border: solid 1px;
+    border-radius: 100%;
+}
+
+/* Icon Size */
+.icon.alt:before {
+    color: #fff;
+    display: block;
+    font-size: 2.2rem;
+    width: 4.1rem;
+    height: 4.1rem;
+    text-align: center;
+    line-height: 4.1rem;
+}
+
+@media screen and (max-width: 1680px) {
+
+    .icon.major:before {
+        font-size: 5.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .icon.major:before {
+        font-size: 4.75rem;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+    .icons {
+        /* margin-left: 0; */
+    }
+    .icon.major {
+        margin: 0 0 1.5rem 0 ;
+        padding: 0.35rem;
+    }
+
+    .icon.major:before {
+        font-size: 4.8rem;
+    }
+
+}
+
+.icon.major {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.icon.major:before {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.icon.alt {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #222;
+}
+
+.icon.alt:hover {
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+.icon.alt:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+label {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 12px 0 2px 0;
+    display: block;
+    font-size: 1.4rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.25em;
+    border: none;
+    border: solid 1px rgba(255, 255, 255, 0.15);
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 8px;
+    text-decoration: none;
+    width: 100%;
+}
+
+input[type="text"]:invalid,
+input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="tel"]:invalid,
+select:invalid,
+textarea:invalid {
+    box-shadow: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 1px #ffffff;
+}
+.actions {
+    font-size: 1.3rem;
+    text-align: center;
+    width: 180px;
+    margin-top: 20px;
+    padding: 12px 10px;
+    border: solid 1px rgba(255, 255, 255, 0.8);
+}
+.actions:hover {
+    background-color: rgba(255, 255, 255, 0.12);
 }
