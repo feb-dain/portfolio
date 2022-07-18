@@ -1,0 +1,802 @@
+@charset "utf-8";
+/* 기본 CSS */
+html {
+    font-size: 62.5%;
+}
+body {
+    background: linear-gradient(30deg, #e4efe9, #93a5cf);
+    font-family: "Montserrat", 'Noto Sans KR', sans-serif;
+}
+/* 지정 너비 적용 클래스 */
+.container {
+    max-width: 1132px;
+    margin: 0 auto;
+}
+.p14 {
+    padding: 0 14px;
+}
+/* 각 박스 타이틀 클래스 */
+.sec_title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.2rem;
+    color: #fff;
+}
+
+
+/* 구분선 스타일 */
+.divider {
+    max-width: 1132px;
+    margin: 0 auto;
+    width: 20px;
+    height: 2px;
+    background: #eee;
+    margin-top: 80px;
+}
+/* 짧은 구분선 스타일 */
+.m_divider {
+    width: 20px;
+    margin: 0 auto;
+    height: 2px;
+    background: #eee;
+    margin-top: 80px;
+}
+
+/* 모바일 퍼스트 */
+/* 공통 CSS */
+.header_wrap {
+    /* background: linear-gradient(45deg, #ffc3a0, #ffafbd);
+    background: linear-gradient(42deg, #e4efe9, #93a5cf); */
+}
+.header {
+    color: #fff;
+    padding: 9px 11px;
+    /* 위치기준값 */
+    position: relative;
+}
+.header .logo img {
+    width: 28px;
+}
+.header .logo {
+    /* 플롯 */
+    float: left;
+}
+
+/* GNB */
+.header .gnb {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 9999;
+
+    /* 로딩시 가려지도록 */
+    display: none;
+}
+
+.header .gnb li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.header .gnb li a {
+    letter-spacing: -0.01em;
+    text-align: right;
+    display: block;
+    font-size: 1.4rem;
+    padding: 14px 5% 14px 0;
+}
+
+/* Hambuger Toggle */
+header .menu_toggle_btn {
+    width: 24px;
+    margin-top: 6px;
+    cursor: pointer;
+    /* 플롯 */
+    float: right;
+}
+header .menu_toggle_btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+}
+header .menu_toggle_btn span:nth-child(2) {
+    margin: 5px 0;
+}
+
+/* 2. 모바일 Slider */
+.slider .slider_img {
+    max-width: 100%;
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    line-height: 382px;
+}
+hr {
+    margin: 0 auto;
+    width: 80%;
+    height: 0.5px;
+    background: #fff;
+    position: relative;
+}
+
+.slider .slider_img p {
+    color: #fff;
+    font-size: 2rem;
+}
+/* .slider .slider_img img {
+    width: 100%;
+} */
+
+/* 3. Contents */
+/* 3-1. 모바일 ABOUT */
+/* .display_section {
+    margin-top: 60px;
+    text-align: center;
+}
+.display_section .sec_title {
+    margin-bottom: 32px;
+}
+.display_section .desc {
+    color: #616161;
+    font-size: 1.4rem;
+    line-height: 2;
+} */
+.work1,
+.work2,
+.work3,
+.work4,
+.work5,
+.work6,
+.work7,
+.work8 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 3-2. ABOUT */
+.promotion_section {
+    margin-top: 68px;
+}
+.promotion_section .promotion_list li {
+    text-align: center;
+    float: left;
+    width: 48%;
+}
+.promotion_section .promotion_list li:nth-child(1),
+.promotion_section .promotion_list li:nth-child(2) {
+    margin-bottom: 160px;
+}
+.promotion_section .promotion_list li:nth-child(1) {
+    margin-top: 0;
+}
+.promotion_section .promotion_list li img {
+    width: 52px;
+}
+.promotion_section .promotion_list li i {
+    font-size: 52px;
+    color: #90a4d1;
+    color: #fff;
+    transition: all 1.2s;
+    transform: scale(1);
+}
+.promotion_section .promotion_list li i:hover {
+    transform: scale(1.2);
+}
+.promotion_section .promotion_list li h3 {
+    margin: 30px 0 20px;
+    color: #383838;
+    color: #f0f2f2;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+.promotion_section .promotion_list li p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: #616161;
+    color: #f2f2f2;
+    line-height: 1.5;
+}
+.promotion_section .promotion_list li p+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #ececec;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+}
+
+/* 3-3. Portfolio */
+.work_section {
+    margin-top: 104px;
+}
+.work_section .sec_title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.work_section .work_list li {
+    width: 100%;
+}
+.work_section .work_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.work_section .work_list li a img {
+    max-width: 100%;
+    width: 100%;
+}
+
+/* 이미지 정보 효과 */
+.work_section .work_list li a {
+    /* 위치기준 */
+    position: relative;
+}
+.work_section .work_list li a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* 포지션 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: #8c8c8c;
+    opacity: 0;
+    /* 트랜지션은 원본에! */
+    transition: all 0.3s;
+}
+.work_section .work_list li a:hover::before {
+    opacity: 0.7;
+}
+.work_section .work_list li a:hover img {
+    filter: grayscale(100);
+}
+
+/* 텍스트 CSS */
+.work_section .work_list li div>h3 {
+    font-size: 2.4rem;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.work_section .work_list li div>span {
+    font-size: 1.1rem;
+    color: #fff;
+}
+/* 텍스트 이동 효과 */
+.work_section .work_list li div {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    z-index: 200;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.work_section .work_list li a:hover div {
+    opacity: 1;
+    transform: translateY(30px);
+    transform: translateY(50%);
+}
+
+/* 3-4. Blog */
+.blog_section {
+    margin-top: 80px;
+}
+.blog_section .sec_title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blog_section .sec_title+img {
+    margin-bottom: 60px;
+}
+
+.blog_section .blog_list li {
+    width: 100%;
+    margin-top: 48px;
+}
+.blog_section .blog_list li:nth-child(1) {
+    margin-top: 0;
+}
+.blog_section img {
+    max-width: 100%;
+    width: 100%;
+}
+.blog_section .blog_list li time {
+    display: block;
+    font-size: 1.2rem;
+    color: #9e9e9e;
+    margin: 10px 0;
+}
+.blog_section .blog_list li h3 {
+    font-size: 1.6rem;
+    color: #424242;
+    line-height: 1.6;
+}
+
+/* 3-5. 모바일 contact */
+.contact_section {
+    margin-top: 100px;
+}
+.contact_section .sec_title {
+    margin-bottom: 48px;
+    text-align: center;
+}
+input,textarea {
+    padding: 13px 0 0 10px;
+    background: rgba(255, 255, 255, 0.35);
+    border-bottom: 1px solid #757575;
+    border: 1px solid #f0f2f2;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+/* Input Form */
+.form input {
+    padding-bottom: 14px;
+    margin-bottom: 40px;
+}
+/* Textarea Form */
+.txta textarea {
+    height: 170px;
+}
+/* Button */
+.send_btn {
+    margin-top: 36px;
+    text-align: right;
+}
+.send_btn button {
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgba(255,255,255,0);
+    border: 1px solid #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+.send_btn button:hover {
+    background: rgba(255,255,255,0.25);
+}
+
+/* 4. Footer */
+.footer {
+    margin-top: 100px;
+}
+.footer iframe {
+    width: 100%;
+    height: 320px;
+}
+.footer p {
+    margin: 20px 0;
+    color: darkgray;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/* 태블릿 미디어쿼리 768px 이상 */
+@media screen and (min-width:768px){    
+    /* 3-2. ABOUT  */
+    .promotion_section {
+        margin-top: 110px;
+    }
+    .promotion_section .promotion_list li {
+        margin-top: 0;
+        text-align: center;
+
+        
+        width: 177px;
+        width: 23.046875%;
+        margin-left: 20px;
+        margin-left: 2.604167%;
+        /* 플롯 */
+        float: left;
+    }
+    .promotion_section .promotion_list li:nth-child(1) {
+        margin-left: 0;
+    }
+    .promotion_section .promotion_list li img {
+        width: 52px;
+    }
+    .promotion_section .promotion_list li h3 {
+        margin: 30px 0 20px;
+    }
+
+    /* 3-3. Portfolio */
+    .work_section {
+        margin-top: 100px;
+    }
+    .work_section .sec_title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .work_section .work_list li {
+        width: 50%;
+        /* 플롯 */
+        float: left;
+    }
+    .work_section .work_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .work_section .work_list li a img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 텍스트 CSS */
+    .work_section .work_list li div>h3 {
+        font-size: 2.4rem;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    .work_section .work_list li div>span {
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    /* 텍스트 이동 효과 */
+    .work_section .work_list li div {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        z-index: 200;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .work_section .work_list li a:hover div {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    /* 3-4. Blog */
+    .blog_section {
+        margin-top: 124px;
+    }
+    .blog_section .sec_title {
+        text-align: center;
+    }
+    .blog_section .blog_list li {
+        margin-top: 0;
+        width: 242.6666666666667px;
+        width: 31.5972%;
+        margin-left: 20px;
+        margin-left: 2.604167%;
+        float: left;
+
+    }
+    .blog_section .blog_list li:nth-child(1) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .blog_section .blog_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .blog_section .blog_list li time {
+        display: block;
+        font-size: 1.2rem;
+        color: #9e9e9e;
+        margin: 10px 0;
+    }
+    .blog_section .blog_list li h3 {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+
+    /* 3-5. 태블릿 contact */
+    .contact_section {
+        margin-top: 180px;
+    }
+    .contact_section .sec_title {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    input,textarea {
+        font-size: 1.2rem;
+    }
+    /* Input Form */
+    .form {
+        width: 374px;
+        width: 48.697917%;
+        margin-right: 20px;
+        margin-right: 2.604167%;
+        /* 플롯 */
+        float: left;
+    }
+    .txta {
+        width: 374px;
+        width: 48.697917%;
+        /* 플롯 */
+        float: right;
+    }
+    .form input {
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+    }
+    /* Textarea Form */
+    .txta textarea {
+        height: 234px;
+    }
+    /* Button */
+    .send_btn {
+        margin-top: 20px;
+        text-align: right;
+    }
+    .send_btn button {
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    /* 4. Footer */
+    .footer {
+        margin-top: 100px;
+    }
+    .footer iframe {
+        width: 100%;
+        height: 320px;
+    }
+    .footer p {
+        margin: 20px 0;
+        color: darkgray;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* PC 미디어쿼리 1132px 이상 */
+@media screen and (min-width:1132px){
+    .header {
+        padding: 18px 16px;
+        /* 위치기준값 */
+        position: relative;
+    }
+    .header .logo {
+        /* 플롯 */
+        float: left;
+    }
+    .header .logo a {
+        font-size: 2.6rem;
+        color: #222;
+        letter-spacing: -2px;
+        font-weight: 500;
+    }
+    
+    /* GNB */
+    .header .gnb {
+        /* 모바일 속성값 초기화 */
+        width: auto;
+        background: none;
+        /* 포지션 */
+        position: static;
+        /* GNB메뉴 보이도록 */
+        display: block !important;
+        /* 플롯 */
+        float: right;
+    }
+    
+    .header .gnb li {
+        border-bottom: 0;
+        /* 플롯 */
+        float: left;
+        margin-left: 20px;
+    }
+    .header .gnb li a {
+        display: block;
+        padding: 0;
+        line-height: 2.6rem;
+        font-size: 1.4rem;
+    }
+    
+    /* Hambuger Toggle */
+    header .menu_toggle_btn {
+        margin-top: 4px;
+        cursor: pointer;
+        /* 플롯 */
+        float: right;
+        display: none;
+    }
+    
+    /* 3-2. Promotion  */
+    .promotion_section {
+        margin-top: 110px;
+    }
+    .promotion_section .promotion_list li {
+        margin-top: 0;
+        text-align: center;
+
+        width: 268px;
+        width: 23.674912%;
+        margin-left: 20px;
+        margin-left: 1.766784%;
+        /* 플롯 */
+        float: left;
+    }
+    .promotion_section .promotion_list li:nth-child(1) {
+        margin-left: 0;
+    }
+    .promotion_section .promotion_list li img {
+        width: 52px;
+    }
+    .promotion_section .promotion_list li h3 {
+        margin: 30px 0 20px;
+        font-size: 1.6rem;
+    }
+    .promotion_section .promotion_list li p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+
+    /* 3-3. Portfolio */
+    .work_section {
+        margin-top: 230px;
+    }
+    .work_section .sec_title {
+        margin: 0 auto;
+        /* text-align: left; */
+        margin-bottom: 48px;
+    }
+
+    .work_section .work_list li {
+        width: 25%;
+        /* 플롯 */
+        float: left;
+    }
+    .work_section .work_list li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .work_section .work_list li a img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* 텍스트 CSS */
+    .work_section .work_list li div>h3 {
+        font-size: 2.4rem;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    .work_section .work_list li div>span {
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    /* 텍스트 이동 효과 */
+    .work_section .work_list li div {
+        position: absolute;
+        left: 30px;
+        top: 0;
+        z-index: 200;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .work_section .work_list li a:hover div {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+
+    /* 3-4. Blog */
+    .blog_section {
+        margin-top: 124px;
+    }
+    .blog_section .sec_title {
+        /* width: 288px;
+        width: 25.441696%; */
+        /* margin-bottom: 0; */
+        /* text-align: left; */
+        /* text-align: center; */
+        /* 플롯 */
+        /* float: left; */
+    }
+    .blog_section .blog_list {
+        width: 74.558304%;
+        /* 플롯 */
+        float: right;
+    }
+    .blog_section .blog_list li {
+        margin-top: 0;
+        width: 268px;
+        width: 31.753555%;
+        margin-left: 20px;
+        margin-left: 2.369668%;
+        /* 플롯 */
+        float: left;
+    }
+    .blog_section .blog_list li:nth-child(1) {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .blog_section .blog_list li:nth-child(3) img {
+        border: 1px solid #e9e9e9;
+    }
+    .blog_section .blog_list li img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .blog_section .blog_list li time {
+        display: block;
+        font-size: 1.2rem;
+        color: #9e9e9e;
+        margin: 10px 0;
+    }
+    .blog_section .blog_list li h3 {
+        font-size: 1.6rem;
+        color: #424242;
+        line-height: 1.6;
+    }
+
+    /* 3-5. PC contact */
+    .contact_section {
+        margin-top: 180px;
+    }
+    .contact_section .sec_title {
+        margin-bottom: 0;
+        /* text-align: center; */
+        /* 플롯 */
+        float: left;
+    }
+    input,textarea {
+        font-size: 1.2rem;
+    }
+    /* Input Form */
+    .form_box {
+        width: 844px;
+        /* width: 74.558304%; */
+        /* 플롯 */
+        float: right;
+    }
+    .form {
+        width: 412px;
+        width: 48.815166%;
+        margin-right: 20px;
+        margin-right: 2.369668%;
+        /* 플롯 */
+        float: left;
+    }
+    .txta {
+        width: 412px;
+        width: 48.815166%;
+        /* 플롯 */
+        float: right;
+    }
+    .form input {
+        padding-bottom: 14px;
+        margin-bottom: 40px;
+    }
+    /* Textarea Form */
+    .txta textarea {
+        height: 234px;
+    }
+    /* Button */
+    .send_btn {
+        margin-top: 20px;
+        text-align: right;
+    }
+    .send_btn button {
+        font-size: 1.2rem;
+        color: #fff;
+        padding: 15px;
+        cursor: pointer;
+    }
+}
+
