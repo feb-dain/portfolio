@@ -567,6 +567,9 @@ input,textarea {
 .t_txt {
     display: none;
 }
+.blog_section p {
+    text-align: center;
+}
 
 
 /* 태블릿 미디어쿼리 768px 이상 */
