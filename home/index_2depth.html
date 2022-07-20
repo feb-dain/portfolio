@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <!-- <link rel="stylesheet" href="./css/notosans_kr_CDN.css"> -->
     <!-- 페이지 CSS -->
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/portfolio_2depth.css">
     <!-- BoxSlider -->
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
     
@@ -44,19 +44,29 @@
                     <a href="#0"><img src="./images/logo.jpg" alt="Logo"></a>
                 </h1>
                 <!-- /Logo -->
+                <hr>
                 <!-- GNB -->
                 <nav>
-                    <ul class="gnb">
-                        <li><a href="#2">LOUIS QUATORZE</a></li>
-                        <li><a href="#3">WICKED</a></li>
-                        <li><a href="#4">LOTTERIA</a></li>
-                        <li><a href="#5">LANCOME</a></li>
-                        <li><a href="#6">DIPTYQUE</a></li>
-                        <li><a href="#7">AIRBNB (TEAM)</a></li>
-                        <li><a href="#8">BENZ</a></li>
-                        <li><a href="#9">MOVIE ORBITAL</a></li>
-                        <li><a href="#10">CONTACT</a></li>
-                        <li><a href="#0">ABOUT</a></li>
+                    <ul class="gnb cf">
+                        <li class="depth1 tg">
+                            <a href="#">PC&nbsp;<i class="bi bi-plus"></i></a>
+                            <ul id="pc_2depth" class="depth2">
+                                <li><a href="#2">LOUIS&nbsp;QUATORZE</a></li>
+                                <li><a href="#4">LOTTERIA</a></li>
+                                <li><a href="#5">LANCOME</a></li>
+                                <li><a href="#6">DIPTYQUE</a></li>
+                                <li><a href="#8">BENZ</a></li>
+                                <li><a href="#9">MOVIE&nbsp;ORBITAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1 tg">
+                            <a href="#">MOBILE&nbsp;<i class="bi bi-plus"></i></a>                            <ul id="m_2depth" class="depth2">
+                                <li><a href="#3">WICKED</a></li>
+                                <li><a href="#7">AIRBNB&nbsp;(TEAM)</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1 no_mr"><a href="#10">CONTACT</a></li>
+                        <!-- <li class="depth1 no_mr"><a href="#0">ABOUT</a></li> -->
                     </ul>
                 </nav>
                 <!-- /GNB -->
@@ -554,5 +564,6 @@
     </script>
     <!-- 페이지 JS -->
     <script src="./js/email_send.js"></script>
+    <script src="./js/toggle.js"></script>
 </body>
 </html>

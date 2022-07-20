@@ -5,7 +5,22 @@ $(document).ready(function(){
     });
 });
 
-// 탑 스크롤
+//GNB SCROLL
+var $root = $('html, body');
+
+$('a[href^="#"]').click(function() {
+    var href = $.attr(this, 'href');
+
+    $root.animate({
+        scrollTop: $(href).offset().top
+    }, 0, function () {
+        window.location.hash = href;
+    });
+
+    return false;
+});
+
+//TOP SCROLL
 $(function(){
     var y = 820;
     $(window).on("scroll",function(){
