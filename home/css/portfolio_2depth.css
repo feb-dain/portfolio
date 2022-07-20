@@ -4,7 +4,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    background: linear-gradient(50deg, #e4efe9,#94b5db,#a9a6d5, #93a5cf);
+    background: linear-gradient(48deg, #e4efe9,#94b5db,#a9a6d5, #93a5cf);
     font-family: "Montserrat", 'Noto Sans KR', sans-serif;
 }
 /* 지정 너비 적용 클래스 */
@@ -411,27 +411,9 @@ ul.icons li:last-child {
     text-align: center;
 }
 
-.blog_section .blog_list li {
-    width: 100%;
-    margin-top: 48px;
-}
-.blog_section .blog_list li:nth-child(1) {
-    margin-top: 0;
-}
 .blog_section img {
     max-width: 100%;
     width: 100%;
-}
-.blog_section .blog_list li time {
-    display: block;
-    font-size: 1.2rem;
-    color: #9e9e9e;
-    margin: 10px 0;
-}
-.blog_section .blog_list li h3 {
-    font-size: 1.6rem;
-    color: #424242;
-    line-height: 1.6;
 }
 
 /* 3-5. 모바일 contact */
@@ -799,11 +781,11 @@ input,textarea {
         font-weight: 500;
     }
     .header .logo img {
-        width: 34px;
+        width: 36px;
     }
     .header hr {
         display: block;
-        margin-top: 16px;
+        margin-top: 17px;
         margin-left: 20px;
         float: left;
         width: 58%;
@@ -854,9 +836,7 @@ input,textarea {
         /* 위치기준값 */
         position: relative;
     }
-    .depth1>a:nth-child(1) {
-        font-size: 1.6rem;
-    }
+    
     /* 2 Depth 메뉴 */
     .gnb .depth2 {
         /* padding: 0 6px; */
@@ -888,15 +868,15 @@ input,textarea {
     
     /* Slider */
     .slider .slider_img img {
-        width: 110px;
-        height: 110px;
+        width: 116px;
+        height: 116px;
         border: 2px solid #fff;
-        border-radius: 55px;
-        margin-top: 91px;
+        border-radius: 58px;
+        margin-top: 87px;
     }
     .slider .slider_img p {
         color: #fff;
-        font-size: 2rem;
+        font-size: 2.1rem;
         line-height: 1.5;
     }
     .slider .slider_img p:nth-child(2) {
@@ -906,14 +886,14 @@ input,textarea {
     .slider .slider_img p:nth-child(3) {
         /* margin-top: 2px; */
         margin-top: 8px;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     .slider .slider_img p:nth-child(4) {
         letter-spacing: -0.01em;
     }
     .slider .slider_img p:nth-child(4),
     .slider .slider_img p:nth-child(5) {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
     .slider .slider_img p:nth-child(5) {
         margin-top: 0;
@@ -923,6 +903,28 @@ input,textarea {
     .icons {
         margin-top: 12px;
         margin-bottom: 128px;
+    }
+    /* 아이콘 */
+    ul.icons li {
+        display: inline-block;
+        /* 아이콘 간격 */
+        padding: 0 1.74rem 0 0;
+    }
+    /* Icon Size */
+    .icon.alt:before {
+        color: #f0f2f2;
+        display: block;
+        font-size: 2.4rem;
+        width: 4.3rem;
+        height: 4.3rem;
+        text-align: center;
+        line-height: 4.3rem;
+    }
+
+    .gem {
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 40px;
     }
 
     /* 3-2. Promotion  */
@@ -943,22 +945,43 @@ input,textarea {
     .promotion_section .promotion_list li:nth-child(1) {
         margin-left: 0;
     }
-    .promotion_section .promotion_list li img {
-        width: 52px;
+    .promotion_section .promotion_list li i {
+        text-shadow: 0 0 30px #8ca0c6;
+        font-size: 56px;
+        color: #90a4d1;
+        color: #fff;
+        transition: all 1.2s;
+        transform: scale(1);
+    }
+    .promotion_section .promotion_list li i:hover {
+        transform: scale(1.1);
     }
     .promotion_section .promotion_list li h3 {
-        margin: 30px 0 20px;
-        font-size: 1.6rem;
+        margin: 24px 0 18px;
+        color: #383838;
+        color: #f0f2f2;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: -0.04em;
     }
     .promotion_section .promotion_list li p {
         font-family: 'Roboto', sans-serif;
-        font-size: 1.4rem;
-        line-height: 1.5;
+        font-size: 1.6rem;
+        color: #616161;
+        color: #f2f2f2;
+        line-height: 1.6;
     }
-
+    .promotion_section .promotion_list li p+p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4rem;
+        color: #ececec;
+        line-height: 1.6;
+        font-weight: 300;
+        letter-spacing: -0.01em;
+    }
     /* 3-3. Portfolio */
     .work_section {
-        /* margin-top: 100px; */
+        margin-top: 168px;
     }
     .work_section .sec_title {
         margin: 0 auto;
@@ -1008,19 +1031,12 @@ input,textarea {
     .blog_section {
         /* margin-top: 124px; */
     }
-    .blog_section .sec_title {
-        /* width: 288px;
-        width: 25.441696%; */
-        /* margin-bottom: 0; */
-        /* text-align: left; */
-        /* text-align: center; */
-        /* 플롯 */
-        /* float: left; */
-    }
     .blog_section p {
+        line-height: 1.8;
         font-size: 1.6rem;
         text-align: center;
     }
+    
     .blog_section button {
         font-size: 1.4rem;
     }
@@ -1079,11 +1095,19 @@ input,textarea {
         cursor: pointer;
     }
 
-    .promotion_list li a p:nth-child(4) {
+    /* .promotion_list li a p:nth-child(4) {
         display: block;
     }
     .t_txt {
         display: none;
+    } */
+
+    /* Txt, Button */
+    .pc_txt {
+        color: #494949;
+        line-height: 1.5;
+        margin-top: 22px;
+        margin-bottom: 30px;
     }
 
 
