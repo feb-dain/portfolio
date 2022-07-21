@@ -141,12 +141,12 @@ hr {
     line-height: 1.5;
 }
 .slider .slider_img p:nth-child(2) {
-    margin-top: 8px;
+    margin-top: 6px;
     font-weight: 500;
 }
 .slider .slider_img p:nth-child(3) {
     /* margin-top: 2px; */
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 1.4rem;
 }
 .slider .slider_img p:nth-child(4) {
@@ -157,18 +157,26 @@ hr {
     font-size: 1.3rem;
 }
 .slider .slider_img p:nth-child(5) {
-    margin-top: -1px;
+    margin-top: -1.5px;
+}
+.slider .slider_img p:nth-child(7) {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    letter-spacing: -0.005em;
+    margin-bottom: 129px;
 }
 .icons {
-    margin-top: 12px;
-    margin-bottom: 128px;
+    margin-top: 7px;
+}
+.slider .slider_img p:nth-child(7) span {
+    font-size: 1.3rem;
 }
 
 /* 아이콘 */
 ul.icons li {
     display: inline-block;
     /* 아이콘 간격 */
-    padding: 0 1.34rem 0 0;
+    padding: 0 1.54rem 0 0;
 }
 ul.icons li:last-child {
     padding-right: 0 !important;
@@ -224,11 +232,11 @@ ul.icons li:last-child {
 .icon.alt:before {
     color: #f0f2f2;
     display: block;
-    font-size: 2.2rem;
-    width: 4.1rem;
-    height: 4.1rem;
+    font-size: 2.1rem;
+    width: 3.9rem;
+    height: 3.9rem;
     text-align: center;
-    line-height: 4.1rem;
+    line-height: 3.9rem;
 }
 .icon.major {
     border-color: rgba(255, 255, 255, 0.35);
@@ -592,7 +600,7 @@ input,textarea {
     }
     /* 3-2. ABOUT  */
     .promotion_section {
-        margin-top: 110px;
+        margin-top: 120px;
     }
     .promotion_section .promotion_list li {
         margin-top: 0;
@@ -872,7 +880,7 @@ input,textarea {
         height: 116px;
         border: 2px solid #fff;
         border-radius: 58px;
-        margin-top: 87px;
+        margin-top: 82px;
     }
     .slider .slider_img p {
         color: #fff;
@@ -898,17 +906,24 @@ input,textarea {
     .slider .slider_img p:nth-child(5) {
         margin-top: 0;
     }
-
+    .slider .slider_img p:nth-child(7) {
+        margin-top: 11px;
+        font-size: 1.7rem;
+        letter-spacing: -0.005em;
+        margin-bottom: 130px;
+    }
+    .slider .slider_img p:nth-child(7) span {
+        font-size: 1.5rem;
+    }
     /* Icons */
     .icons {
-        margin-top: 12px;
-        margin-bottom: 128px;
+        margin-top: 9px;
     }
     /* 아이콘 */
     ul.icons li {
         display: inline-block;
         /* 아이콘 간격 */
-        padding: 0 1.74rem 0 0;
+        padding: 0 1.84rem 0 0;
     }
     /* Icon Size */
     .icon.alt:before {
