@@ -423,6 +423,12 @@ ul.icons li:last-child {
     max-width: 100%;
     width: 100%;
 }
+.blog_section p {
+    font-size: 1.3rem;
+}
+.blog_section button {
+    font-size: 1.2rem;
+}
 
 /* 3-5. 모바일 contact */
 .contact_section {
@@ -518,7 +524,7 @@ input,textarea {
     color: #494949;
     line-height: 1.5;
     margin-top: 20px;
-    margin-bottom: 26px;
+    margin-bottom: 22px;
 }
 .pc_txt {
     display: none;
@@ -1121,8 +1127,8 @@ input,textarea {
     .pc_txt {
         color: #494949;
         line-height: 1.5;
-        margin-top: 22px;
-        margin-bottom: 30px;
+        margin-top: 24px;
+        margin-bottom: 28px;
     }
 
 
