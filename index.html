@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/portfolio_2depth.css">
     <!-- BoxSlider -->
     <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
     
     <!-- 조건부주석 -->
     <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
@@ -50,23 +51,30 @@
                     <ul class="gnb cf">
                         <li class="depth1 tg">
                             <a href="#">PC&nbsp;<i class="bi bi-plus"></i></a>
-                            <ul id="pc_2depth" class="depth2">
-                                <li><a href="#2">LOUIS&nbsp;QUATORZE</a></li>
+                            <ul class="depth2">
+                                <li><a href="#2">LOUIS<br>QUATORZE</a></li>
                                 <li><a href="#4">LOTTERIA</a></li>
                                 <li><a href="#5">LANCOME</a></li>
                                 <li><a href="#6">DIPTYQUE</a></li>
-                                <li><a href="#8">BENZ</a></li>
-                                <li><a href="#9">MOVIE&nbsp;ORBITAL</a></li>
                             </ul>
                         </li>
                         <li class="depth1 tg">
                             <a href="#">MOBILE&nbsp;<i class="bi bi-plus"></i></a>
-                            <ul id="m_2depth" class="depth2">
+                            <ul class="depth2">
                                 <li><a href="#3">WICKED</a></li>
                                 <li><a href="#7">AIRBNB&nbsp;(TEAM)</a></li>
                             </ul>
                         </li>
-                        <li class="depth1 no_mr"><a href="#10">CONTACT</a></li>
+                        <li class="depth1 tg">
+                            <a href="#">EVENT&nbsp;<i class="bi bi-plus"></i></a>
+                            <ul class="depth2">
+                                <li><a href="#8">BENZ</a></li>
+                                <li><a href="#9">GHIBLI</a></li>
+                                <li><a href="#10">AESPA (K-POP)</a></li>
+                                <li><a href="#11">MOVIE&nbsp;ORBITAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="depth1 no_mr"><a href="#12">CONTACT</a></li>
                         <!-- <li class="depth1 no_mr"><a href="#0">ABOUT</a></li> -->
                     </ul>
                 </nav>
@@ -118,9 +126,9 @@
         <main role="main">
             <section class="content">
                 <!-- 3-1. Skills -->
-                <section class="promotion_section container">
+                <section class="skills_section container">
                     <h2>
-                        <ul class="promotion_list cf">
+                        <ul class="skills_list cf">
                             <li>
                                 <a href="#1">
                                     <i class="fa-brands fa-html5"></i>
@@ -258,6 +266,24 @@
                             <li>
                                 <a href="#9">
                                     <div>
+                                        <h3>GHIBLI</h3>
+                                        <span>WEB DESIGN &bull; CODING</span>
+                                    </div>
+                                    <img src="./images/mockup9.jpg" alt="mockup9">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#10">
+                                    <div>
+                                        <h3>AESPA (K-POP)</h3>
+                                        <span>WEB DESIGN &bull; CODING</span>
+                                    </div>
+                                    <img src="./images/mockup10.jpg" alt="mockup10">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#11">
+                                    <div>
                                         <h3>MOVIE ORBITAL</h3>
                                         <span>WEB DESIGN &bull; CODING</span>
                                     </div>
@@ -289,7 +315,7 @@
                             홈페이지 접속 후<br> 가장 처음 보는
                             슬라이더에 이벤트, 인기 상품들을<br> 넣었습니다.
                             다양한 상품들을 한눈에 볼 수 있도록<br>
-                            배치와 정렬에 신경 썼습니다.<br> Website 버튼 클릭시 
+                            배치와 정렬에 신경 썼습니다.<br> Website 버튼 클릭 시 
                             해당 홈페이지로 이동합니다.
                         </p>
                         <p class="pc_txt">
@@ -300,7 +326,7 @@
                             홈페이지 접속 후 가장 처음 보는
                             슬라이더에 이벤트, 인기 상품들을 넣었습니다.<br>
                             다양한 상품을 한눈에 볼 수 있도록
-                            배치와 정렬에 신경 썼습니다. Website 버튼 클릭시 
+                            배치와 정렬에 신경 썼습니다. Website 버튼 클릭 시 
                             해당 홈페이지로 이동합니다.
                         </p>
                         <a href="./louis_quatorze" target="_blank">
@@ -315,7 +341,7 @@
                             관객들이 쉽게 표를 구매하고,<br>
                             관련 정보를 빠르고 편하게 얻을 수
                             있도록 했습니다.<br>
-                            Website 버튼 클릭시 메인 페이지로 이동합니다.<br>
+                            Website 버튼 클릭 시 메인 페이지로 이동합니다.<br>
                             모바일 화면 왼쪽 상단 햄버거 메뉴를 누르면<br> 다양한 페이지를 보실 수 있습니다.
                         </p>
                         <p class="pc_txt">
@@ -323,7 +349,7 @@
                             관객들이 쉽게 표를 구매하고,
                             관련 정보를 빠르고 편하게 얻을 수
                             있도록 했습니다.<br>
-                            Website 버튼 클릭시 메인 페이지로 이동합니다. 
+                            Website 버튼 클릭 시 메인 페이지로 이동합니다. 
                             모바일 화면 왼쪽 상단 햄버거 메뉴를 누르면 다양한 페이지를 보실 수 있습니다.
                         </p>
                         <a href="./wicked/wicked_mockup.html" target="_blank">
@@ -338,12 +364,12 @@
                             롯데리아 사이트를 리뉴얼.<br>
                             접근성과 심플함을 가장 중요하게
                             생각했습니다.<br>
-                            Website 버튼 클릭시 
+                            Website 버튼 클릭 시 
                             메인 페이지로 이동합니다.<br>
                             화면 클릭을 통해 메인 
                             &rarr; 서브 &rarr; 콘텐츠 페이지로 <br>
                             이동 가능합니다.
-                            Planning 버튼 클릭시 <br> 기획안을
+                            Planning 버튼 클릭 시 <br> 기획안을
                             살펴보실 수 있습니다.
                         </p>
                         <p class="pc_txt">
@@ -351,12 +377,12 @@
                             롯데리아 사이트를 리뉴얼.
                             접근성과 심플함을 가장 중요하게
                             생각했습니다.<br>
-                            Website 버튼 클릭시 
+                            Website 버튼 클릭 시 
                             메인 페이지로 이동합니다.
                             화면 클릭을 통해 메인 페이지
                             &rarr; 서브 페이지 &rarr; 콘텐츠 페이지로
                             이동 가능합니다.<br>
-                            Planning 버튼 클릭시 기획안을
+                            Planning 버튼 클릭 시 기획안을
                             살펴보실 수 있습니다.
                         </p>
                         <a href="./lotteria" target="_blank">
@@ -373,14 +399,14 @@
                             FLEX 이용해 랑콤 홈페이지 제작.<br>
                             다양한 기능을 넣어 사용자
                             편의성을 증가시켰습니다.<br>
-                            Website 버튼 클릭시
+                            Website 버튼 클릭 시
                             해당 홈페이지로 이동합니다.
                         </p>
                         <p class="pc_txt">
                             FLEX 이용해 랑콤 홈페이지 제작.
                             다양한 기능을 넣어 사용자
                             편의성을 증가시켰습니다.<br>
-                            Website 버튼 클릭시
+                            Website 버튼 클릭 시
                             해당 홈페이지로 이동합니다.
                         </p>
                         <a href="./lancome" target="_blank">
@@ -392,23 +418,23 @@
                         <img src="./images/img3.jpg" alt="portfolio3">
                         <p class="m_txt">
                             FLOAT 이용해 딥티크 홈페이지 제작.
-                            지나치게 심플한 기존<br> 홈페이지를 리뉴얼하여 편의성과 접근성을 높혔습니다.<br>
-                            상단에는 상품 판매 유도를 위해
+                            지나치게 심플한 기존<br> 홈페이지를 리뉴얼하여 편의성과 접근성을 높였습니다.<br>
+                            상단에는 상품 구매 유도를 위해
                             신제품 및 인기 상품을,<br>
                             중간부에는 딥티크의 오래된 역사를
                             홍보하는 소개란을<br> 배치했습니다.
-                            하단에는 FAQ를 배치해 접근성을 높혔습니다.<br>
-                            Website 버튼 클릭시 해당 홈페이지로 이동합니다.
+                            하단에는 FAQ를 배치해 접근성을 높였습니다.<br>
+                            Website 버튼 클릭 시 해당 홈페이지로 이동합니다.
                         </p>
                         <p class="pc_txt">
                             FLOAT 이용해 딥티크 홈페이지 제작.
-                            지나치게 심플한 기존 홈페이지를 리뉴얼해 편의성과 접근성을 높혔습니다.<br>
-                            상단에는 상품 판매 유도를 위해 
+                            지나치게 심플한 기존 홈페이지를 리뉴얼해 편의성과 접근성을 높였습니다.<br>
+                            상단에는 상품 구매 유도를 위해 
                             신제품 및 인기 상품,
                             중간부에는 딥티크의 오래된 역사를
                             홍보하는 소개란을 배치했습니다.<br>
-                            하단에는 FAQ를 배치해 접근성을 높혔습니다.
-                            Website 버튼 클릭시 해당 홈페이지로 이동합니다.
+                            하단에는 FAQ를 배치해 접근성을 높였습니다.
+                            Website 버튼 클릭 시 해당 홈페이지로 이동합니다.
                         </p>
                         <a href="./diptyque" target="_blank">
                             <button type="button" class="pf_btn no_mr one_btn diptyque">Website</button>
@@ -424,11 +450,11 @@
                             팀원들과 함께 했습니다.<br>
                             활기차고 발랄한 에어비앤비 이미지는
                             그대로 살리면서<br> 이용자 편의성은 증가시켰습니다.<br><br>
-                            Website 버튼 클릭시 메인 페이지로 이동합니다.<br>
-                            메인 페이지에서 상단 GNB 영역 수영장 메뉴 클릭시<br> 서브 페이지로 이동,
-                            서브 페이지에서 왼쪽 상단 첫번째 사진<br> 클릭시 콘텐츠 페이지로 이동합니다.
+                            Website 버튼 클릭 시 메인 페이지로 이동합니다.<br>
+                            메인 페이지에서 상단 GNB 영역 수영장 메뉴 클릭 시<br> 서브 페이지로 이동,
+                            서브 페이지에서 왼쪽 상단 첫번째 사진<br> 클릭 시 콘텐츠 페이지로 이동합니다.
                             뒤로가기 버튼( &larr; )을<br> 누르면 이전 페이지로 이동할 수 있습니다.<br>
-                            하단 Planning 버튼 클릭시 기획안을 살펴보실 수 있습니다.
+                            하단 Planning 버튼 클릭 시 기획안을 살펴보실 수 있습니다.
                         </p>
                         <p class="pc_txt">
                             팀 프로젝트로
@@ -437,11 +463,11 @@
                             팀원들과 함께 했습니다.
                             활기차고 발랄한<br> 에어비앤비 이미지는
                             그대로 살리면서 이용자 편의성은 증가시켰습니다.
-                            Website 버튼 클릭시 메인 페이지로 이동합니다.<br>
-                            메인 페이지에서 상단 GNB 영역 수영장 메뉴 클릭시 서브 페이지로 이동,
-                            서브 페이지에서 왼쪽 상단 첫번째 사진<br> 클릭시 콘텐츠 페이지로 이동합니다.
+                            Website 버튼 클릭 시 메인 페이지로 이동합니다.<br>
+                            메인 페이지에서 상단 GNB 영역 수영장 메뉴 클릭 시 서브 페이지로 이동,
+                            서브 페이지에서 왼쪽 상단 첫번째 사진<br> 클릭 시 콘텐츠 페이지로 이동합니다.
                             뒤로가기 버튼( &larr; )을 누르면 이전 페이지로 이동할 수 있습니다.<br>
-                            하단 Planning 버튼 클릭시 기획안을 살펴보실 수 있습니다.
+                            하단 Planning 버튼 클릭 시 기획안을 살펴보실 수 있습니다.
                         </p>
                         <a href="./airbnb/airbnb_mockup.html" target="_blank">
                             <button type="button" class="pf_btn airbnb">Website</button>
@@ -454,47 +480,101 @@
                         <h2 class="sec_title container" id="8">BENZ</h2>
                         <img src="./images/img7.jpg" alt="portfolio7">
                         <p class="m_txt">
-                            벤츠 홈페이지 제작.
-                            메인 화면에 신제품 홍보 영상을<br> 넣어
-                            이용자의 관심을 유도했습니다.
-                            형식적인 GNB 메뉴를<br> 탈피해
+                            벤츠 이벤트 페이지 제작.
+                            이용자의 관심을 끌어내기 위해<br>
+                            메인 화면에 신제품 홍보 영상을 넣었습니다.<br>
+                            형식적인 GNB 메뉴를 탈피해<br>
                             역동적인 벤츠 이미지를 강조했습니다.<br>
-                            Website 버튼 클릭시 해당 홈페이지로 이동합니다.
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
                         </p>
                         <p class="pc_txt">
-                            벤츠 홈페이지 제작.
-                            메인 화면에 신제품 홍보 영상을 넣어
-                            이용자의 관심을 유도했습니다.<br>
+                            벤츠 이벤트 페이지 제작.
+                            이용자의 관심을 끌어내기 위해
+                            메인 화면에 신제품 홍보 영상을 넣었습니다.<br>
                             형식적인 GNB 메뉴를 탈피해
                             역동적인 벤츠 이미지를 강조했습니다.
-                            Website 버튼 클릭시 해당 홈페이지로 이동합니다.
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
                         </p>
                         <a href="./benz" target="_blank">
                             <button type="button" class="pf_btn no_mr one_btn benz">Website</button>
                         </a>
                     </section>
                     <section class="cf safe_area p16">
-                        <h2 class="sec_title container" id="9">MOVIE ORBITAL</h2>
+                        <h2 class="sec_title container" id="9">GHIBLI</h2>
+                        <img src="./images/img9.jpg" alt="portfolio9">
+                        <p class="m_txt">
+                            스튜디오 지브리 이벤트 페이지 제작.<br>
+                            이미지, 제목, 줄거리로
+                            이용자의 흥미를 유발하고<br>
+                            효과적으로 애니메이션을 소개했습니다.<br>
+                            귀엽고 독특한 지브리 이미지에 맞춰<br>
+                            'Dongle' 폰트를 사용했습니다.<br>
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
+                        </p>
+                        <p class="pc_txt">
+                            스튜디오 지브리 이벤트 페이지 제작.<br>
+                            이미지, 제목, 줄거리로
+                            이용자의 흥미를 유발하고 
+                            효과적으로 애니메이션을 소개했습니다.<br>
+                            귀엽고 독특한 지브리 이미지에 맞춰 
+                            'Dongle' 폰트를 사용했습니다.<br>
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
+                        </p>
+                        <a href="./ghibli" target="_blank">
+                            <button type="button" class="pf_btn no_mr one_btn ghibli">Website</button>
+                        </a>
+                    </section>
+                    <section class="cf safe_area p16">
+                        <h2 class="sec_title container" id="10">AESPA</h2>
+                        <img src="./images/img10.jpg" alt="portfolio10">
+                        <p class="m_txt">
+                            K-POP 걸그룹 에스파 이벤트 페이지 제작.<br>
+                            멤버 이름을 호버하면 멤버별 티저와<br>
+                            멤버명, 생년월일이 나오도록 했습니다.<br>
+                            AI 컨셉에 맞게 사이버 느낌이 나도록<br>
+                            'Orbitron', '나눔 고딕' 등 딱딱한 폰트를 사용했고,<br>
+                            편리하게 웹사이트를 공유할 수 있도록 
+                            우측 상단에<br> 클릭 시 각 SNS로 이동하는 SNS 아이콘을 넣어<br>
+                            홍보 효과를 증대시켰습니다.<br>
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
+                        </p>
+                        <p class="pc_txt">
+                            K-POP 걸그룹 에스파 이벤트 페이지 제작.<br>
+                            멤버 이름을 호버하면 멤버별 티저와 
+                            멤버명, 생년월일이 나오도록 했습니다.<br>
+                            AI 컨셉에 맞게 사이버 느낌이 나도록 
+                            'Orbitron', '나눔 고딕' 등 딱딱한 폰트를 사용했고,<br>
+                            편리하게 웹사이트를 공유할 수 있도록 
+                            우측 상단에 클릭 시 각 SNS로 이동하는 SNS 아이콘을 넣어 
+                            홍보 효과를 증대시켰습니다.<br>
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
+                        </p>
+                        <a href="./aespa" target="_blank">
+                            <button type="button" class="pf_btn no_mr one_btn aespa">Website</button>
+                        </a>
+                    </section>
+                    <section class="cf safe_area p16">
+                        <h2 class="sec_title container" id="11">MOVIE ORBITAL</h2>
                         <img src="./images/img8.jpg" alt="portfolio8">
                         <p class="m_txt">
-                            영화 오비탈 홈페이지 제작.
+                            영화 오비탈 이벤트 페이지 제작.
                             SF 영화에 걸맞는 신비로운<br>
                             이미지를 줄 수 있도록 했습니다.
                             직관적인 메뉴 배치를 통해<br> 쉽게 표를 예매하고,
                             쉽게 영화 정보를 얻을 수 있게 했습니다.<br>
                             영화 예고편을 메인에 넣어 흥미를 유발하고<br>
                             부가적인 설명 없이도 어떤 영화인지 알 수 있게 했습니다.<br>
-                            Website 버튼 클릭시 해당 홈페이지로 이동합니다.
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
                         </p>
                         <p class="pc_txt">
-                            영화 오비탈 홈페이지 제작.
+                            영화 오비탈 이벤트 페이지 제작.
                             SF 영화에 걸맞는 신비로운
-                            이미지를 줄 수 있도록 했습니다.
-                            직관적인 메뉴 배치를 통해 쉽게 표를 예매하고,<br>
-                            쉽게 영화 정보를 얻을 수 있게 했습니다.
-                            영화 예고편을 메인에 넣어 흥미를 유발하고<br>
-                            부가적인 설명 없이도 어떤 영화인지 알 수 있게 했습니다. 
-                            Website 버튼 클릭시 해당 홈페이지로 이동합니다.
+                            이미지를 줄 수 있도록 했습니다.<br>
+                            직관적인 메뉴 배치를 통해 쉽게 표를 예매하고,
+                            쉽게 영화 정보를 얻을 수 있게 했습니다.<br>
+                            영화 예고편을 메인에 넣어 흥미를 유발하고 
+                            부가적인 설명 없이도 어떤 영화인지 알 수 있게 했습니다.<br>
+                            Website 버튼 클릭 시 해당 웹사이트로 이동합니다.
                         </p>
                         <a href="./movie_orbital" target="_blank">
                             <button type="button" class="pf_btn no_mr one_btn orbital">Website</button>
@@ -506,7 +586,7 @@
                 <!-- 3-5. Contact -->
                 <section class="contact_section container p16">
                     <div class="cf">
-                        <h2 class="sec_title" id="10">CONTACT</h2>
+                        <h2 class="sec_title" id="12">CONTACT</h2>
                         <form action="#" class="form_box">
                             <fieldset class="cf">
                                 <legend class="blind">CONTACT&nbsp;US</legend>

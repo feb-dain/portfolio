@@ -92,7 +92,6 @@ body {
 }
 .gnb .depth1 li a {
     font-weight: 100;
-
     color: rgba(255, 255, 255, 0.7);
 }
 
@@ -256,21 +255,21 @@ ul.icons li:last-child {
 }
 
 /* 3-2. ABOUT */
-.promotion_section {
+.skills_section {
     margin-top: 34px;
     margin-top: 94px;
 }
-.promotion_section .promotion_list li {
+.skills_section .skills_list li {
     margin-top: 78px;
     text-align: center;
 }
-.promotion_section .promotion_list li:nth-child(1) {
+.skills_section .skills_list li:nth-child(1) {
     margin-top: 0;
 }
-.promotion_section .promotion_list li img {
+.skills_section .skills_list li img {
     width: 52px;
 }
-.promotion_section .promotion_list li i {
+.skills_section .skills_list li i {
     text-shadow: 0 0 30px #8ca0c6;
     font-size: 52px;
     color: #90a4d1;
@@ -278,10 +277,10 @@ ul.icons li:last-child {
     transition: all 1.2s;
     transform: scale(1);
 }
-.promotion_section .promotion_list li i:hover {
+.skills_section .skills_list li i:hover {
     transform: scale(1.1);
 }
-.promotion_section .promotion_list li h3 {
+.skills_section .skills_list li h3 {
     margin: 20px 0 10px;
     color: #383838;
     color: #f0f2f2;
@@ -289,14 +288,14 @@ ul.icons li:last-child {
     font-weight: 600;
     letter-spacing: -0.04em;
 }
-.promotion_section .promotion_list li p {
+.skills_section .skills_list li p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
     color: #616161;
     color: #f2f2f2;
     line-height: 1.5;
 }
-.promotion_section .promotion_list li p+p {
+.skills_section .skills_list li p+p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: #ececec;
@@ -565,6 +564,12 @@ input,textarea {
 .benz:hover {
     background: linear-gradient(#204653, #2a5663);
 }
+.ghibli:hover {
+    background: linear-gradient(#175e6e, #236d7d);
+}
+.aespa:hover {
+    background: linear-gradient(#855c9e, #a35ca4);
+}
 .orbital:hover {
     background: linear-gradient(#091221, #292836);
 }
@@ -605,10 +610,10 @@ input,textarea {
         margin: 8px 0;
     }
     /* 3-2. ABOUT  */
-    .promotion_section {
+    .skills_section {
         margin-top: 120px;
     }
-    .promotion_section .promotion_list li {
+    .skills_section .skills_list li {
         margin-top: 0;
         text-align: center;
 
@@ -620,13 +625,13 @@ input,textarea {
         /* 플롯 */
         float: left;
     }
-    .promotion_section .promotion_list li:nth-child(1) {
+    .skills_section .skills_list li:nth-child(1) {
         margin-left: 0;
     }
-    .promotion_section .promotion_list li img {
+    .skills_section .skills_list li img {
         width: 52px;
     }
-    .promotion_section .promotion_list li h3 {
+    .skills_section .skills_list li h3 {
         margin: 30px 0 20px;
     }
 
@@ -760,7 +765,7 @@ input,textarea {
         cursor: pointer;
     }
 
-    .promotion_list li a p:nth-child(4) {
+    .skills_list li a p:nth-child(4) {
         display: none;
     }
     .t_txt {
@@ -802,7 +807,7 @@ input,textarea {
         margin-top: 17px;
         margin-left: 20px;
         float: left;
-        width: 58%;
+        width: 56%;
         background: #f0f2f2;
         height: 1px;
     }
@@ -842,7 +847,7 @@ input,textarea {
         width: auto;
         float: left;
         margin-top: 10px;
-        margin-right: 100px;
+        margin-right: 54px;
         /* width: 140px; */
         /* display: table-cell; */
         color: #fff;
@@ -948,11 +953,11 @@ input,textarea {
         margin-bottom: 40px;
     }
 
-    /* 3-2. Promotion  */
-    .promotion_section {
+    /* 3-2. Skills  */
+    .skills_section {
         margin-top: 170px;
     }
-    .promotion_section .promotion_list li {
+    .skills_section .skills_list li {
         margin-top: 0;
         text-align: center;
 
@@ -963,10 +968,10 @@ input,textarea {
         /* 플롯 */
         float: left;
     }
-    .promotion_section .promotion_list li:nth-child(1) {
+    .skills_section .skills_list li:nth-child(1) {
         margin-left: 0;
     }
-    .promotion_section .promotion_list li i {
+    .skills_section .skills_list li i {
         text-shadow: 0 0 30px #8ca0c6;
         font-size: 56px;
         color: #90a4d1;
@@ -974,10 +979,10 @@ input,textarea {
         transition: all 1.2s;
         transform: scale(1);
     }
-    .promotion_section .promotion_list li i:hover {
+    .skills_section .skills_list li i:hover {
         transform: scale(1.1);
     }
-    .promotion_section .promotion_list li h3 {
+    .skills_section .skills_list li h3 {
         margin: 24px 0 18px;
         color: #383838;
         color: #f0f2f2;
@@ -985,14 +990,14 @@ input,textarea {
         font-weight: 600;
         letter-spacing: -0.04em;
     }
-    .promotion_section .promotion_list li p {
+    .skills_section .skills_list li p {
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         color: #616161;
         color: #f2f2f2;
         line-height: 1.6;
     }
-    .promotion_section .promotion_list li p+p {
+    .skills_section .skills_list li p+p {
         font-family: 'Roboto', sans-serif;
         font-size: 1.4rem;
         color: #ececec;
@@ -1000,6 +1005,7 @@ input,textarea {
         font-weight: 300;
         letter-spacing: -0.01em;
     }
+
     /* 3-3. Portfolio */
     .work_section {
         margin-top: 168px;
@@ -1010,7 +1016,7 @@ input,textarea {
     }
 
     .work_section .work_list li {
-        width: 25%;
+        width: 20%;
         /* 플롯 */
         float: left;
     }
@@ -1116,7 +1122,7 @@ input,textarea {
         cursor: pointer;
     }
 
-    /* .promotion_list li a p:nth-child(4) {
+    /* .skills_list li a p:nth-child(4) {
         display: block;
     }
     .t_txt {
