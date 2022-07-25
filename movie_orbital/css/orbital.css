@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* Viewport 가변단위 */
-/* 1920(vw): 내 마음 속의 기준값 x 936(vh) */
+/* 1920(vw) x 936(vh) */
 
 * {
     background-color: transparent !important;
@@ -90,7 +90,7 @@ body, html {
     /* (280/1920)*100=14.583333=2.5 */
     left: 14.583333vw;
     /* (270/936)*100=28.846154=23.504274=10.683761 */
-    top: 26.4vh;
+    top: 27.4vh;
     z-index: 20;
 }
 .video_text h2 {
@@ -116,7 +116,7 @@ body, html {
     /* 16/936*100=1.709402 */
     padding-left: 8px;
     /* 22/936*100=2.350427 */
-    margin-top: 2.350427px;
+    margin-top: 5.350427px;
     line-height: 1.4;
     letter-spacing: -0.01em;
 }
@@ -126,12 +126,12 @@ body, html {
     /* 186/1920*100=9.6875 */
     width: 9.6875vw;
     /* 80/936*100=8.547009 */
-    height: 80px;
+    /* height: 80px; */
     height: 8.547009vh;
-    padding: 27.5px 0;
+    /* padding: 27.5px 0; */
     /* 27.5/936*100=2.938034 */
     padding: 2.938034vh 0;
-    margin: 3.846154vh 0 0;
+    margin: 4.846154vh 0 0;
     /* 36/936*100=3.846154 */
     font-size: 2.2vh;
     font-weight: 500;
