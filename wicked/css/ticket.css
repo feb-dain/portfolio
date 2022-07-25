@@ -137,6 +137,7 @@ input[id="menuicon"]:checked +label {
     background: #8abf3f;
     border: 1px solid #8abf3f;
     padding: 6px 0;
+    cursor: pointer;
 }
 #sch_wrap .btn .btn_sep {
     margin-right: 5%;
