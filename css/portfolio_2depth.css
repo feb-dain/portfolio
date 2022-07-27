@@ -417,9 +417,6 @@ ul.icons li:last-child {
 .portfolio_section p {
     font-size: 1.3rem;
 }
-.portfolio_section button {
-    font-size: 1.2rem;
-}
 
 /* 3-5. 모바일 contact */
 .contact_section {
@@ -524,8 +521,12 @@ input,textarea {
     width: 48.04%;
     margin-right: 3%;
     margin-bottom: 16px;
+    display: inline-block;
 }
 .pf_btn a {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
     display: inline-block;
     width: 100%;
     border: 1px solid #000;
@@ -1051,8 +1052,7 @@ input,textarea {
         font-size: 1.6rem;
         text-align: center;
     }
-    
-    .portfolio_section button {
+    .pf_btn a {
         font-size: 1.4rem;
     }
 
