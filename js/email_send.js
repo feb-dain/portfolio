@@ -17,10 +17,10 @@ $(document).ready(function() {
 
         emailjs.send('gmail', 'template_eeuba83', templateParams)
                 .then(function(response) {
-                alert('감사합니다! 빠른 답장 드리겠습니다.')
+                    alert('감사합니다! 빠른 답장 드리겠습니다.');
                     window.location.reload();
                 }, function(error) {
-                    alert('정상적인 제출이 이루어지지 않았습니다. 다시 시도해주세요!')
+                    alert('정상적인 제출이 이루어지지 않았습니다. 다시 시도해주세요!');
                 });
     });
 });
