@@ -127,7 +127,6 @@ header {
     flex-flow: row wrap;
 }
 .gnb li {
-    /* background: red; */
     padding-left: 22px;
 }
 .gnb li:first-child {
@@ -231,7 +230,8 @@ header {
 .video_title .video_contents ul li {
     text-align: center;
 }
-.video_title .video_contents ul li:nth-child(1) {
+.video_title .video_contents ul h2 {
+    text-align: center;
     margin-top: 10px;
 }
 .video_title .video_contents ul li:nth-child(2) {
