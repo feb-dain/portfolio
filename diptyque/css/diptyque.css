@@ -207,14 +207,14 @@ header .img_deco .shop_btn h3 {
     font-size: 24px;
     text-align: center;
     color: #6f6f6f;
-    margin-bottom: 78px;
     line-height: 1.2;
 }
-.artist .artist_text p {
+.artist p.artist_text {
     font-weight: 400;
     padding-top: 24px;
     letter-spacing: -0.02em;
     color: #acacac;
+    margin-bottom: 78px;
 }
 .artist_tab {
     width: 580px;
