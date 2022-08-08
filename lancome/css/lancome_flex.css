@@ -230,8 +230,7 @@ header {
 .video_title .video_contents ul li {
     text-align: center;
 }
-.video_title .video_contents ul h2 {
-    text-align: center;
+.video_title .video_contents ul li:nth-child(1) {
     margin-top: 10px;
 }
 .video_title .video_contents ul li:nth-child(2) {
