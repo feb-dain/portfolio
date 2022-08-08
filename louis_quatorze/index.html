@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="./images/p_images/favicon.jpg">
-    <link rel="apple-touch-icon=precomposed" href="./images/p_images/favicon.jpg">
     <link rel="stylesheet" href="./css/reset.css">
     <!-- 페이지 CSS -->
     <link rel="stylesheet" href="./css/louis.css">
@@ -78,7 +77,6 @@
             });
         });
     </script>
-</script>
 
 </head>
 <body>
@@ -89,7 +87,7 @@
         <!-- /1. Header -->
 
         <!-- 2. Slider -->
-        <article class="slider">
+        <div class="slider">
             <div id="gallery_wrap">
                 <ul class="slide_gallery">
                     <li>
@@ -122,69 +120,67 @@
                     </li>
                 </ul>
             </div>
-        </article>
+        </div>
         <!-- /2. Slider -->
 
         <!-- 3. Contents -->
-        <main role="main">
-            <section class="content">
+        <main>
+            <div class="content">
                 <!-- 3-1 Display -->
                 <section class="display_section container cf">
                     <h2 class="sec_title">BEST</h2>
                     <!-- 3-2. PC-Best -->
                     <section class="pc_best_section">
-                        <h2>
-                            <ul class="best_list cf">
-                                <li>
-                                    <a href="JAVASCRIPT:VOID(0);">
-                                        <img src="./images/s_images/best1.jpg" alt="Best Product1">
-                                        <h3>라라(LaLa) 여성반지갑 라벤더</h3>
-                                        <p>
-                                            134,590원
-                                        </p>
-                                        <p>
-                                            218,000원
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="JAVASCRIPT:VOID(0);">
-                                        <img src="./images/s_images/best2.jpg" alt="Best Product2">
-                                        <h3>포쉬(Poche) 핸드폰 크로스백</h3>
-                                        <p>
-                                            165,810원
-                                        </p>
-                                        <p>
-                                            188,000원
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="JAVASCRIPT:VOID(0);">
-                                        <img src="./images/s_images/best3.jpg" alt="Best Product3">
-                                        <h3>미니캐비어 마이크로백 블루</h3>
-                                        <p>
-                                            245,720원
-                                        </p>
-                                        <p>
-                                            398,000원
-                                        </p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="JAVASCRIPT:VOID(0);">
-                                        <img src="./images/s_images/best4.jpg" alt="Best Product4">
-                                        <h3>르나타(RENATA) 토트백</h3>
-                                        <p>
-                                            682,200원
-                                        </p>
-                                        <p>
-                                            758,000원
-                                        </p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </h2>
+                        <ul class="best_list cf">
+                            <li>
+                                <a href="JAVASCRIPT:VOID(0);">
+                                    <img src="./images/s_images/best1.jpg" alt="Best Product1">
+                                    <h3>라라(LaLa) 여성반지갑 라벤더</h3>
+                                    <p>
+                                        134,590원
+                                    </p>
+                                    <p>
+                                        218,000원
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="JAVASCRIPT:VOID(0);">
+                                    <img src="./images/s_images/best2.jpg" alt="Best Product2">
+                                    <h3>포쉬(Poche) 핸드폰 크로스백</h3>
+                                    <p>
+                                        165,810원
+                                    </p>
+                                    <p>
+                                        188,000원
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="JAVASCRIPT:VOID(0);">
+                                    <img src="./images/s_images/best3.jpg" alt="Best Product3">
+                                    <h3>미니캐비어 마이크로백 블루</h3>
+                                    <p>
+                                        245,720원
+                                    </p>
+                                    <p>
+                                        398,000원
+                                    </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="JAVASCRIPT:VOID(0);">
+                                    <img src="./images/s_images/best4.jpg" alt="Best Product4">
+                                    <h3>르나타(RENATA) 토트백</h3>
+                                    <p>
+                                        682,200원
+                                    </p>
+                                    <p>
+                                        758,000원
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
                     </section>
                     <!-- /3-2. PC-Best -->
                 </section>
@@ -192,7 +188,7 @@
 
                 <!-- 3-2. Best -->
                 <section class="best_section container">
-                    <h2 class="swiper-container">
+                    <div class="swiper-container">
                         <ul class="best_list swiper-wrapper cf">
                             <li class="swiper-slide slide1">
                                 <a href="javascript:void(0);">
@@ -243,7 +239,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </h2>
+                    </div>
                 </section>
                 <!-- /3-2. Best -->
 
@@ -412,17 +408,19 @@
                     </div>
                 </section>
                 <!-- /3-5. Contact -->
-            </section>
+            </div>
         </main>
         <!-- /3. Contents -->
 
         <!-- 4. Footer -->
-        <footer class="footer"> 
+        <footer class="footer">
         </footer>
         <!-- /4. Footer -->
     </div>
+    <!-- 페이지 JS -->
+    <script src="./js/portfolio.js"></script>
+    <!-- 스와이퍼 제이쿼리 플러그인 -->
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>
-<!-- 스와이퍼 제이쿼리 플러그인 -->
-<script src="./js/swiper-bundle.js"></script>
-<script src="./js/swiper.js"></script>
