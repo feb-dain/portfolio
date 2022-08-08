@@ -23,7 +23,6 @@ aside {
     color: #fff;
 }
 aside .top_sub {
-    /* background: red; */
     padding: 0 50px 0 50px;
     flex-flow: row wrap;
     display: flex;
@@ -35,13 +34,9 @@ aside .top_sub p {
 
 aside .top_sub p:nth-child(1) {
     padding-left: 400px;
-    /* margin-left: 410px; */
-    /* background: green; */
 }
 aside .top_sub p:nth-child(2) {
     padding-right: 206px;
-    /* margin-left: -365px; */
-    /* background: blue; */
 }
 aside .top_sub p:nth-child(3) {
     margin-top: 20px;
@@ -101,7 +96,6 @@ header {
     height: 22px;
 }
 .local .lnb li:nth-child(3) {
-    /* background: red; */
     padding-left: 16px;
 }
 .local .lnb li:nth-child(4) {
@@ -184,19 +178,15 @@ header {
     flex-flow: row nowrap;
     margin-top: 98px;
 }
-.bestSeller h2 img {
-    width: 620px;
-    height: 480px;
-}
 #best_video {
     width: 620px;
     height: 480px;
 }
-.bestSeller h3 {
+.bestSeller .bestSeller_items {
     text-align: center;
     padding-top: 30px;
 }
-.bestSeller h3 p:first-child {
+.bestSeller .bestSeller_items h2 {
     font-size: 2.6rem;
     font-weight: bold;
     padding-right: 123px;
@@ -280,7 +270,6 @@ header {
     position: relative;
 }
 #lancome_video {
-    /*background-color: black; */
     width: 800px;
     height: 450px;
 }
@@ -296,7 +285,6 @@ header {
 }
 
 #btn i {
-    /* background: red; */
     font-size: 90px;
     color: rgba(255, 255, 255, 0);
     cursor: pointer;
@@ -305,17 +293,6 @@ header {
 #btn i:hover {
     color: rgba(255, 255, 255, 0.8);
 }
-
-/* .real_title .real_time ul li:last-child a {
-    pointer-events: none;
-} */
-/* .real_title .real_time ul li:nth-child(2) a:hover { */
-    /* background-color: transparent; */
-    /* background: none;
-    cursor: default;
-    color: #393939;
-    font-weight: 500;
-} */
 
 /* Section 03 */
 .review {
@@ -380,10 +357,6 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-.footer_information .footer_menu,
-.footer_information .footer_free {
-    /* margin-top: 40px; */
-}
 .footer_gnb {
     display: flex;
     font-size: 1.4rem;
@@ -405,11 +378,6 @@ footer {
 }
 .footer_escrow {
     font-size: 1.2rem;
-    /* display: flex; */
-}
-.footer_escrow span {
-    /* display: inline-block; */
-    /* margin-right: 26px; */
 }
 .footer_info p span {
     color: #dfdfdf;
