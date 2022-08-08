@@ -135,14 +135,14 @@ header img {
     top: 29.769392vh;
     z-index: 1;
 }
-.txt .p1 {
+.txt .txt1 {
     text-align: right;
     font-size: 11.949686vh;
     color: #fff;
     font-weight: 700;
     letter-spacing: -1px;
 }
-.txt .p2 {
+.txt .txt2 {
     margin-top: 10px;
     font-family: 'Noto Sans KR', serif;
     text-align: right;
