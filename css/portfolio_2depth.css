@@ -578,6 +578,10 @@ input,textarea {
 .portfolio_section p {
     text-align: center;
 }
+.contribution {
+    margin-top: 24px;
+    font-weight: 600;
+}
 
 
 /* 태블릿 미디어쿼리 768px 이상 */
@@ -1114,8 +1118,11 @@ input,textarea {
     .pc_txt {
         color: #494949;
         line-height: 1.5;
-        margin-top: 24px;
-        margin-bottom: 28px;
+        margin-top: 22px;
+        margin-bottom: 30px;
+    }
+    .contribution {
+        margin-top: 28px;
     }
     .pf_btn {
         width: 48.84%;
