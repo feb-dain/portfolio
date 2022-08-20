@@ -273,14 +273,14 @@ h1 img {
 .new {
     margin-top: 38px;
 } 
-.new_content {
+.new_title {
     display: flex;
     background: #fff;
 }
-.new_content li {
+.new_title li {
     width: 50%;
 }
-.new_content li p {
+.new_title li p {
     font-size: 1.25rem;
     color: var(--text-gray-color);
 }
@@ -334,4 +334,9 @@ footer {
     line-height: 100px;
     color: var(--text-gray-color);
     background: #f1f1f1;
+}
+
+/* PC 1280px */
+@media screen and (min-width:80rem) {
+    
 }
