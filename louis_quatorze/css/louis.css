@@ -6,6 +6,17 @@ html {
 body {
     font-family: 'Montserrat', 'IBM Plex Sans KR', serif;
 }
+/* 슬라이더 */
+article {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+#gallery_wrap {
+    max-width: 1920px;
+}
+#gallery_wrap img {
+    width: 100%;
+}
 /* 지정 너비 적용 클래스 */
 .p14 {
     padding: 0 14px;
