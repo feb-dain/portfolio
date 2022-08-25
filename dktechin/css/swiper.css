@@ -1,0 +1,236 @@
+@charset "utf-8";
+/* 1. 스와이퍼 페이지영역 */
+#portfolio {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#000,#202020,#c1c1c1);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* A. 스와이퍼 최상위 구조 클래스 */
+#portfolio .swiper-container {
+    padding-top: 100px;
+    padding-bottom: 84px;
+}
+
+/* C-1. 스와이퍼 될 slider 각각 내용들 */
+#portfolio .swiper-slide {
+    width: 1100px;
+    height: 614px;
+    background-color: #595959;
+}
+
+/* C-1. 스와이퍼 될 slider 공통 영역 */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* C-1. 스와이퍼 될 slider 각각 내용들 */
+.slide1 {
+    /* background-image: url(http://place-hold.it/1100x614); */
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 위치기준값 */
+    position: relative;
+}
+
+.slide1 h3 {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: lightseagreen;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 1;
+}
+.slide1 .btn {
+    margin-top: 440px;
+}
+.slide1 .btn button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid lightseagreen;
+    border-radius:20px;
+    letter-spacing: -1px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+}
+.slide1 .btn button:hover {
+    background-color: teal;
+    color: #454545;
+}
+
+/* C-2. 스와이퍼 될 slider 각각 내용들 */
+.slide2 {
+    /* background-image: url(http://place-hold.it/1100x614); */
+    background-image: url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 위치기준값 */
+    position: relative;
+
+    color: #c1c1c1;
+}
+
+.slide2 h3 {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: skyblue;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 2;
+}
+.slide2 .btn {
+    margin-top: 440px;
+}
+.slide2 .btn button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid skyblue;
+    border-radius:20px;
+    letter-spacing: -1px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+}
+.slide2 .btn button:hover {
+    background-color: skyblue;
+    color: #454545;
+}
+
+/* C-3. 스와이퍼 될 slider 각각 내용들 */
+.slide3 {
+    /* background-image: url(http://place-hold.it/1100x614); */
+    background-image: url(../images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 위치기준값 */
+    position: relative;
+
+    color: #bbb;
+}
+
+.slide3 h3 {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: thistle;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 2;
+}
+.slide3 .btn {
+    margin-top: 440px;
+}
+.slide3 .btn button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid thistle;
+    border-radius:20px;
+    letter-spacing: -1px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+}
+.slide3 .btn button:hover {
+    background-color: thistle;
+    color: #454545;
+}
+
+/* C-4. 스와이퍼 될 slider 각각 내용들 */
+.slide4 {
+    /* background-image: url(http://place-hold.it/1100x614); */
+    background-image: url(../images/bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 위치기준값 */
+    position: relative;
+
+    color: black;
+}
+
+.slide4 h3 {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: pink;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 2;
+}
+.slide4 .btn {
+    margin-top: 440px;
+}
+.slide4 .btn button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid pink;
+    border-radius:20px;
+    letter-spacing: -1px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+}
+.slide4 .btn button:hover {
+    background-color: pink;
+    color: #454545;
+}
+
+/* C-5. 스와이퍼 될 slider 각각 내용들 */
+.slide5 {
+    /* background-image: url(http://place-hold.it/1100x614); */
+    background-image: url(../images/bg5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 위치기준값 */
+    position: relative;
+
+    color: black;
+}
+
+.slide5 h3 {
+    font-weight: bold;
+    font-size: 60px;
+    font-family: 'Anton', sans-serif;
+    color: lightpink;
+    /* 포지션 */
+    position: absolute;
+    left: 20px;
+    top: -32px;
+    z-index: 2;
+}
+.slide5 .btn {
+    margin-top: 440px;
+}
+.slide5 .btn button {
+    width: 120px;
+    height: 40px;
+    border: 1px solid lightpink;
+    border-radius:20px;
+    letter-spacing: -1px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+}
+.slide5 .btn button:hover {
+    background-color: lightpink;
+    color: #454545;
+}

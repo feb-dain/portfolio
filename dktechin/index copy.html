@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="dainlee">
+    <meta name="description" content="dktechin, coding test">
+    <title>dktechin</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css" type="text/css">
+    <!-- 페이지 CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <!-- <link rel="stylesheet" href="./css/dktechin.css"> -->
+
+    <!-- 조건부주석 -->
+    <!--[if lt IE 9]><script src="./js/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="./js/respond.src.js"></script><![endif]-->
+    <!--[if lt IE 10]><script src="./js/PIE.js"></script><![endif]-->
+
+    <!-- 제이쿼리 코어 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <!-- 제이쿼리 플러그인 파일 -->
+    <script src="./js/prefixfree.min.js"></script>
+    
+
+    <!-- 페이지 JS -->
+    <script src="./js/dktechin.js" defer></script>
+    <style>
+        /* New and Ranking */
+        .newAndRanking_title {
+            margin-bottom: 1.4rem;
+        }
+        /* New */
+        .new {
+            margin-top: 3.8rem;
+        }
+        .new_content {
+            display: flex;
+            background: #fff;
+        }
+        .new_content {
+            width: 100%;
+            display: flex;
+        }
+        /* 문제지점 */
+        .new_content>.swiper-container {
+            position: relative;
+            width: 50%;
+        }
+        /* Swiper Button */
+        .swiper-button-next::after, .swiper-button-prev::after {
+            display: none;
+        }
+        .new_content .swiper-button-prev,
+        .new_content .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(50%);
+            z-index: 20;
+            cursor: pointer;
+            padding: 0 1.6rem;
+        }
+        .new_content .swiper-button-prev {
+            left: 0;
+        }
+        .new_content .swiper-button-next {
+            right: 0;
+        }
+
+        /* 미디어 쿼리 */
+        .newAndRanking {
+            display: flex;
+            flex-direction: row-reverse;
+            padding: var(--pc-tab2-padding);
+        }
+        /* Margin Reset */
+        .new {
+        margin-top: 0;
+        }
+        .ranking {
+            margin: 0 1rem 0 0;
+        }
+        .new, .ranking {
+            margin: 6rem 0 7.8rem 0;
+            width: calc( 50% - 0.5rem );
+        }
+        /* ??? */
+        .new,.ranking {
+            width: 50%;
+        }
+        /* New */
+        .new h2 img {
+            width: 5rem;
+        }
+
+        /* New Slider */
+        .new_content {
+            width: 100%;
+            display: block;
+        }
+        /* 문제 지점 */
+        .new_content>.swiper-container {
+            position: relative;
+            width: 100%;
+            max-width: 1120px;
+            width: 100%;
+            padding: 40px 0;
+
+            /* 패딩을 넣으니까 viewpoint가 깨졌음 */
+            /* padding: 0 2rem; */
+        }
+        .slide-content{
+            margin: 0 40px;
+            overflow: hidden;
+            border-radius: 25px;
+            }
+        .swiper-slide img {
+            width: 100%;
+        }
+        .new_content  .swiper-wrapper {
+            /* 마진 넣어도 깨짐.. 그러면 어떻게 간격을 주지..? */
+            /* margin: 2rem; */
+            padding-bottom: 1rem;
+        }
+        .new_content .swiper-container h2 {
+            font-size: 1.4rem;
+            margin: 1.1rem 0 0.7rem 0;
+        }
+        /* Slider1 */
+        .swiper1 {
+            /* padding: 0 2rem; */
+        }
+        .swiper1>.swiper-wrapper>.swiper-slide {
+            padding: 0 3.6rem 2.1rem 3.6rem;
+            padding: 0;
+            /* 여기에 넣어도 깨짐 */
+            /* margin: 2rem; */
+        }
+        .swiper1>.swiper-wrapper>.swiper-slide>a>img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        
+            <!-- Tab Content2 -->
+            <section id="tab2" class="tabcontent">
+                <div class="newAndRanking p30">
+                    <!-- New -->
+                    <section class="new">
+                        <h2 class="newAndRanking_title"><img src="./images/new.png" alt="NEW"></h2>
+                        <div class="new_content">
+                            <!-- Slider1 -->
+                            <div class="swiper-container">
+                                <div class="slide-content swiper1">
+                                    <h2><a href="#">#국내여행블로그</a></h2>
+                                    <div class="card swiper swiper-wrapper">
+                                        <div class="card swiper-slide">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-button-prev btn-prev1"><img src="./images/arrow_prev_btn.png" alt="이전 버튼"></div>
+                                    <div class="swiper-button-next btn-next1"><img src="./images/arrow_next_btn.png" alt="다음 버튼"></div>
+                                </div>
+                            </div>
+
+                            <!-- Slider2 -->
+                            <div class="swiper-container">
+                                <div class="slide-content swiper2">
+                                    <h2><a href="#">#100만방문자</a></h2>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide cf">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                            <div class="text">한 달에 5개 이상 포스팅 한 달에 5개 이상 포스팅할 정도면..</div>
+                                        </div>
+                                        <div class="swiper-slide cf">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                            <div class="text">한 달에 5개 이상 포스팅 한 달에 5개 이상 포스팅할 정도면..</div>
+                                        </div>
+                                        <div class="swiper-slide cf">
+                                            <a href="#"><img src="./images/new_photo.jpg" alt="2016 TISTORY X DAUM BLOG"></a>
+                                            <div class="text">한 달에 5개 이상 포스팅 한 달에 5개 이상 포스팅할 정도면..</div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="swiper-button-prev btn-prev2"><img src="./images/arrow_prev_btn.png" alt="이전 버튼"></div>
+                                    <div class="swiper-button-next btn-next2"><img src="./images/arrow_next_btn.png" alt="다음 버튼"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+        
+                    <!-- Ranking -->
+                    <section class="ranking">
+                        <h2 class="newAndRanking_title"><img src="./images/ranking.png" alt="RANKING"></h2>
+                        <ol>
+                            <li>
+                                <div><a href="#"><span>1</span>한 달에 5개 이상 포스팅할 정도면...</a></div>
+                                <img src="./images/star5.jpg" alt="별 5개">
+                            </li>
+                            <li>
+                                <div><a href="#"><span>2</span>한 달에 5개 이상 포스팅할 정도면...</a></div>
+                                <img src="./images/star3_5.jpg" alt="별 3.5개">
+                            </li>
+                            <li>
+                                <div><a href="#"><span>3</span>한 달에 5개 이상 포스팅할 정도면...</a></div>
+                                <img src="./images/star2_5.jpg" alt="별 2.5개">
+                            </li>
+                            <li>
+                                <div><a href="#"><span>4</span>한 달에 5개 이상 포스팅할 정도면...</a></div>
+                                <img src="./images/star2.jpg" alt="별 2개">
+                            </li>
+                            <li>
+                                <div><a href="#"><span>5</span>한 달에 5개 이상 포스팅할 정도면...</a></div>
+                                <img src="./images/star0_5.jpg" alt="별 0.5개">
+                            </li>
+                        </ol>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <!-- 스와이퍼 제이쿼리 플러그인 -->
+    <script src="./js/swiper-bundle.js"></script>
+    <!-- 스와이퍼 스크립트 커스텀, 자신의 사이트에 맞게 속성값 바꿈 -->
+    <script src="./js/swiper.js"></script>
+</body>
+</html>
