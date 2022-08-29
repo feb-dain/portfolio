@@ -102,13 +102,6 @@ input[id="menuicon"]:checked +label+nav {
     color: #000;
 }
 
-/* 추가 코딩 */
-/* .header .mobile_gnb .gnb>li:last-child {
-    color: #7baa39;
-    font-weight: 700;
-    background: none;
-} */
-
 /* SNS */
 .header .mobile_gnb .sns {
     display: table;
@@ -148,31 +141,17 @@ input[id="menuicon"]:checked +label+nav {
     margin-top: 20px;
 }
 
-/* FAQ */
-/* .faq {
-    width: 100%;
-    text-align: right;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9999;
-}
-.faq img {
-    width: 24px;
-    height: 26px;
-    margin-top: 18px;
-    margin-right: 24px;
-} */
-
 /* Contents */
 #contents {
     width: 100%;
     background: #000;
 }
+
 /* 슬라이더 */
 .slider ul li img {
     width: 100%;
 }
+
 /* 인포 */
 .info {
     letter-spacing: normal;
