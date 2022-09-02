@@ -109,7 +109,7 @@ header .menu_toggle_btn span:nth-child(2) {
 }
 
 /* 2. 모바일 Profile */
-.profile .profile_img {
+.profile .profile_wrap {
     max-width: 100%;
     width: 100%;
     height: 450px;
@@ -126,30 +126,30 @@ header .menu_toggle_btn span:nth-child(2) {
     background: #fff;
     position: relative;
 }
-.profile .profile_img img {
+.profile .profile_wrap img {
     width: 100px;
     margin-top: 98px;
 }
 
-.profile .profile_img h2 {
+.profile .profile_wrap h2 {
     margin-top: 6px;
     font-weight: 500;
 }
-.profile .profile_img p:nth-child(3) {
+.profile .profile_wrap p:nth-child(3) {
     margin-top: 8px;
     font-size: 1.4rem;
 }
-.profile .profile_img p:nth-child(4) {
+.profile .profile_wrap p:nth-child(4) {
     letter-spacing: -0.01em;
 }
-.profile .profile_img p:nth-child(4),
-.profile .profile_img p:nth-child(5) {
+.profile .profile_wrap p:nth-child(4),
+.profile .profile_wrap p:nth-child(5) {
     font-size: 1.3rem;
 }
-.profile .profile_img p:nth-child(5) {
+.profile .profile_wrap p:nth-child(5) {
     margin-top: -1.5px;
 }
-.profile .profile_img p:nth-child(7) {
+.profile .profile_wrap p:nth-child(7) {
     margin-top: 10px;
     font-size: 1.5rem;
     letter-spacing: -0.005em;
@@ -158,7 +158,7 @@ header .menu_toggle_btn span:nth-child(2) {
 .icons {
     margin-top: 7px;
 }
-.profile .profile_img p:nth-child(7) span {
+.profile .profile_wrap p:nth-child(7) span {
     font-size: 1.3rem;
 }
 
@@ -885,36 +885,36 @@ input,textarea {
         background: #fff;
         position: relative;
     }
-    .profile .profile_img img {
+    .profile .profile_wrap img {
         width: 200px;
         margin-top: 82px;
     }
-    .profile .profile_img {
+    .profile .profile_wrap {
         color: #fff;
         font-size: 2.1rem;
         line-height: 1.5;
     }
-    .profile .profile_img p:nth-child(3) {
+    .profile .profile_wrap p:nth-child(3) {
         margin-top: 8px;
         font-size: 1.7rem;
     }
-    .profile .profile_img p:nth-child(4) {
+    .profile .profile_wrap p:nth-child(4) {
         letter-spacing: -0.01em;
     }
-    .profile .profile_img p:nth-child(4),
-    .profile .profile_img p:nth-child(5) {
+    .profile .profile_wrap p:nth-child(4),
+    .profile .profile_wrap p:nth-child(5) {
         font-size: 1.5rem;
     }
-    .profile .profile_img p:nth-child(5) {
+    .profile .profile_wrap p:nth-child(5) {
         margin-top: 0;
     }
-    .profile .profile_img p:nth-child(7) {
+    .profile .profile_wrap p:nth-child(7) {
         margin-top: 11px;
         font-size: 1.7rem;
         letter-spacing: -0.005em;
         margin-bottom: 130px;
     }
-    .profile .profile_img p:nth-child(7) span {
+    .profile .profile_wrap p:nth-child(7) span {
         font-size: 1.5rem;
     }
     /* Icons */
