@@ -611,7 +611,11 @@ input,textarea {
     header .menu_toggle_btn span:nth-child(2) {
         margin: 0.8rem 0;
     }
-    /* 3-2. ABOUT  */
+    /* 2. Profile     */
+    .profile .profile_wrap img {
+        margin-top: 6rem;
+    }
+    /* 3-1. Skills  */
     .skills_section {
         margin-top: 12rem;
     }
