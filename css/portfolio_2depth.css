@@ -9,11 +9,11 @@ body {
 }
 /* 지정 너비 적용 클래스 */
 .container {
-    max-width: 1132px;
+    max-width: 113.2rem;
     margin: 0 auto;
 }
 .p16 {
-    padding: 0 16px;
+    padding: 0 1.6rem;
 }
 /* 각 박스 타이틀 클래스 */
 .sec_title {
@@ -26,12 +26,13 @@ body {
 /* 공통 CSS */
 .header {
     color: #fff;
-    padding: 9px 11px;
+    padding: 0.9rem 1.1rem;
     /* 위치기준값 */
     position: relative;
 }
 .header .logo img {
-    width: 28px;
+    width: 2.8rem;
+    margin-top: 0.5rem;
 }
 .header .logo {
     /* 플롯 */
@@ -55,7 +56,7 @@ body {
 }
 
 .header .gnb li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.15);
 }
 .header .gnb li a {
     color: #f0f2f2;
@@ -63,7 +64,7 @@ body {
     text-align: right;
     display: block;
     font-size: 1.4rem;
-    padding: 14px 5% 14px 0;
+    padding: 1.4rem 5% 1.4rem 0;
 }
 .depth1 {
     width: 100%;
@@ -92,8 +93,8 @@ body {
 
 /* Hambuger Toggle */
 header .menu_toggle_btn {
-    width: 24px;
-    margin-top: 6px;
+    width: 2.4rem;
+    margin-top: 0.6rem;
     cursor: pointer;
     /* 플롯 */
     float: right;
@@ -101,18 +102,18 @@ header .menu_toggle_btn {
 header .menu_toggle_btn span {
     display: block;
     width: 100%;
-    height: 2px;
+    height: 0.2rem;
     background: #fff;
 }
 header .menu_toggle_btn span:nth-child(2) {
-    margin: 5px 0;
+    margin: 0.5rem 0;
 }
 
 /* 2. 모바일 Profile */
 .profile .profile_wrap {
     max-width: 100%;
     width: 100%;
-    height: 450px;
+    height: 45rem;
     text-align: center;
     color: #fff;
     font-size: 2rem;
@@ -122,21 +123,21 @@ header .menu_toggle_btn span:nth-child(2) {
 .profile hr {
     margin: 0 auto;
     width: 86%;
-    height: 0.5px;
+    height: 0.05rem;
     background: #fff;
     position: relative;
 }
 .profile .profile_wrap img {
-    width: 100px;
-    margin-top: 98px;
+    width: 10rem;
+    margin-top: 9.8rem;
 }
 
 .profile .profile_wrap h2 {
-    margin-top: 6px;
+    margin-top: 0.6rem;
     font-weight: 500;
 }
 .profile .profile_wrap p:nth-child(3) {
-    margin-top: 8px;
+    margin-top: 0.8rem;
     font-size: 1.4rem;
 }
 .profile .profile_wrap p:nth-child(4) {
@@ -147,16 +148,16 @@ header .menu_toggle_btn span:nth-child(2) {
     font-size: 1.3rem;
 }
 .profile .profile_wrap p:nth-child(5) {
-    margin-top: -1.5px;
+    margin-top: -0.15rem;
 }
 .profile .profile_wrap p:nth-child(7) {
-    margin-top: 10px;
+    margin-top: 1rem;
     font-size: 1.5rem;
     letter-spacing: -0.005em;
-    margin-bottom: 129px;
+    margin-bottom: 12.9rem;
 }
 .icons {
-    margin-top: 7px;
+    margin-top: 0.7rem;
 }
 .profile .profile_wrap p:nth-child(7) span {
     font-size: 1.3rem;
@@ -196,7 +197,7 @@ ul.icons li:last-child {
     font-family: 'Font Awesome 5 Brands';
 }
 .icon.major {
-    border: solid 1px;
+    border: solid 0.1rem;
     display: inline-block;
     border-radius: 100%;
     padding: 0.65rem;
@@ -210,12 +211,12 @@ ul.icons li:last-child {
     height: 2rem;
     line-height: 2rem;
     border-radius: 100%;
-    border: solid 1px;
+    border: solid 0.1rem;
     text-align: center;
 }
 .icon.alt {
     display: inline-block;
-    border: solid 1px;
+    border: solid 0.1rem;
     border-radius: 100%;
 }
 /* Icon Size */
@@ -247,23 +248,21 @@ ul.icons li:last-child {
 
 /* 3-2. ABOUT */
 .skills_section {
-    margin-top: 34px;
-    margin-top: 94px;
+    margin-top: 9.4rem;
 }
 .skills_section .skills_list li {
-    margin-top: 78px;
+    margin-top: 7.8rem;
     text-align: center;
 }
 .skills_section .skills_list li:nth-child(1) {
     margin-top: 0;
 }
 .skills_section .skills_list li img {
-    width: 52px;
+    width: 5.2rem;
 }
 .skills_section .skills_list li i {
-    text-shadow: 0 0 30px #8ca0c6;
-    font-size: 52px;
-    color: #90a4d1;
+    text-shadow: 0 0 3rem #8ca0c6;
+    font-size: 5.2rem;
     color: #fff;
     transition: all 1.2s;
     transform: scale(1);
@@ -272,8 +271,7 @@ ul.icons li:last-child {
     transform: scale(1.1);
 }
 .skills_section .skills_list li h3 {
-    margin: 20px 0 10px;
-    color: #383838;
+    margin: 2rem 0 1rem;
     color: #f0f2f2;
     font-size: 1.6rem;
     font-weight: 600;
@@ -282,7 +280,6 @@ ul.icons li:last-child {
 .skills_section .skills_list li p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.4rem;
-    color: #616161;
     color: #f2f2f2;
     line-height: 1.5;
 }
@@ -298,16 +295,16 @@ ul.icons li:last-child {
 /* 3-2. Portfolio Preview */
 .gem {
     text-align: center;
-    margin-top: 22px;
-    margin-bottom: 36px;
+    margin-top: 2.2rem;
+    margin-bottom: 3.6rem;
 }
 .bi-gem {
     text-align: center;
     color: #fff;
-    font-size: 40px;
+    font-size: 4rem;
 }
 .work_section {
-    margin-top: 160px;
+    margin-top: 16rem;
 }
 .work_section .sec_title {
     margin: 0 auto;
@@ -357,7 +354,7 @@ ul.icons li:last-child {
 .work_section .work_list li div>h3 {
     font-size: 2.4rem;
     color: #fff;
-    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
 }
 .work_section .work_list li div>span {
     font-size: 1.1rem;
@@ -366,7 +363,7 @@ ul.icons li:last-child {
 /* 텍스트 이동 효과 */
 .work_section .work_list li div {
     position: absolute;
-    left: 30px;
+    left: 3rem;
     top: 0;
     z-index: 200;
     opacity: 0;
@@ -374,13 +371,13 @@ ul.icons li:last-child {
 }
 .work_section .work_list li a:hover div {
     opacity: 1;
-    transform: translateY(30px);
+    transform: translateY(3rem);
     transform: translateY(50%);
 }
 
 
 .circle {
-    margin-top: 42px;
+    margin-top: 4.2rem;
     color: #f0f2f2;
     text-align: center;
 }
@@ -389,21 +386,21 @@ ul.icons li:last-child {
 }
 @keyframes float {
    0% {transform:translate(0, 0);}
-   100% {transform:translate(0, 8px);}
+   100% {transform:translate(0, 0.8rem);}
 }  
 
 
 /* 3-4. Portfolio */
 .portfolio_section {
-    margin-top: 38px;
-    padding-bottom: 28px;
+    margin-top: 3.8rem;
+    padding-bottom: 2.8rem;
 }
 .portfolio_section .sec_title {
     font-size: 3.2rem;
     color: #222;
-    padding-top: 38px;
-    margin-top: 62px;
-    margin-bottom: 24px;
+    padding-top: 3.8rem;
+    margin-top: 6.2rem;
+    margin-bottom: 2.4rem;
     text-align: center;
 }
 
@@ -417,40 +414,40 @@ ul.icons li:last-child {
 
 /* 3-5. 모바일 contact */
 .contact_section {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 .contact_section .sec_title {
-    margin-bottom: 48px;
+    margin-bottom: 4.8rem;
     text-align: center;
 }
 input,textarea {
     color: #6a6a6a;
-    padding: 13px 0 0 10px;
+    padding: 1.3rem 0 0 1rem;
     background: rgba(255, 255, 255, 0.35);
-    border-bottom: 1px solid #757575;
-    border: 1px solid #f0f2f2;
+    border-bottom: 0.1rem solid #757575;
+    border: 0.1rem solid #f0f2f2;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
 /* Input Form */
 .form input {
-    padding-bottom: 14px;
-    margin-bottom: 40px;
+    padding-bottom: 1.4rem;
+    margin-bottom: 4rem;
 }
 /* Textarea Form */
 .txta textarea {
-    height: 170px;
+    height: 17rem;
 }
 /* Button */
 .send_btn {
-    margin-top: 36px;
+    margin-top: 3.6rem;
     text-align: right;
 }
 .send_btn button {
     font-size: 1.2rem;
     color: #fff;
     background: #a1c3d4;
-    padding: 15px;
+    padding: 1.5rem;
     cursor: pointer;
 }
 .send_btn button:hover {
@@ -459,41 +456,41 @@ input,textarea {
 
 /* 4. Footer */
 .footer {
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 .footer iframe {
     width: 100%;
-    height: 320px;
+    height: 32rem;
 }
 .footer p {
     font-weight: 100;
-    margin: 20px 0;
+    margin: 2rem 0;
     color: #acc0c0;
     text-align: center;
     font-size: 0.9rem;
 }
 .portfolio_section {
     background: #fff;
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 
 /* Aside */
 .top {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
     background-color: #f2f2f2;
-    border: 1px solid #eee;
-    border-radius: 50px;
+    border: 0.1rem solid #eee;
+    border-radius: 5rem;
     font-size: 0.813rem;
     text-align: center;
-    padding-top: 7px;
+    padding-top: 0.7rem;
     opacity: 0.8;
     cursor: pointer;
 
     /* 포지션 */
     position: fixed;
-    right: 20px;
-    bottom: 30px;
+    right: 2rem;
+    bottom: 3rem;
     z-index: 100;
     /* 로딩시 안보이게 */
     display: none;
@@ -501,15 +498,15 @@ input,textarea {
 .top i {
     color: #222;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 /* Txt, Button */
 .m_txt, .pc_txt {
     color: #494949;
     line-height: 1.5;
-    margin-top: 20px;
-    margin-bottom: 22px;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
 }
 .pc_txt {
     display: none;
@@ -517,7 +514,7 @@ input,textarea {
 .pf_btn {
     width: 48.04%;
     margin-right: 3%;
-    margin-bottom: 16px;
+    margin-bottom: 1.6rem;
     display: inline-block;
 }
 .pf_btn a {
@@ -526,13 +523,13 @@ input,textarea {
     font-size: 1.2rem;
     display: inline-block;
     width: 100%;
-    border: 1px solid #000;
-    padding: 15px;
+    border: 0.1rem solid #000;
+    padding: 1.5rem;
     cursor: pointer;
 }
 .pf_btn a:hover {
     color: #fff;
-    border: 1px solid #fff;
+    border: 0.1rem solid #fff;
     background: linear-gradient(45deg, #fcb69f, #ffecd2);
 }
 
@@ -576,13 +573,13 @@ input,textarea {
     text-align: center;
 }
 .contribution {
-    margin-top: 24px;
+    margin-top: 2.4rem;
     font-weight: 600;
 }
 
 
 /* 태블릿 미디어쿼리 768px 이상 */
-@media screen and (min-width:768px){
+@media screen and (min-width:76.8rem){
     /* Txt */
     .pc_txt {
         display: block;
@@ -599,8 +596,8 @@ input,textarea {
     }
     /* Hambuger Toggle */
     header .menu_toggle_btn {
-        width: 30px;
-        margin-top: 6px;
+        width: 3rem;
+        margin-top: 0.6rem;
         cursor: pointer;
         /* 플롯 */
         float: right;
@@ -608,24 +605,20 @@ input,textarea {
     header .menu_toggle_btn span {
         display: block;
         width: 100%;
-        height: 2px;
+        height: 0.2rem;
         background: #fff;
     }
     header .menu_toggle_btn span:nth-child(2) {
-        margin: 8px 0;
+        margin: 0.8rem 0;
     }
     /* 3-2. ABOUT  */
     .skills_section {
-        margin-top: 120px;
+        margin-top: 12rem;
     }
     .skills_section .skills_list li {
         margin-top: 0;
         text-align: center;
-
-        
-        width: 177px;
         width: 23.046875%;
-        margin-left: 20px;
         margin-left: 2.604167%;
         /* 플롯 */
         float: left;
@@ -634,10 +627,10 @@ input,textarea {
         margin-left: 0;
     }
     .skills_section .skills_list li img {
-        width: 52px;
+        width: 5.2rem;
     }
     .skills_section .skills_list li h3 {
-        margin: 30px 0 20px;
+        margin: 3rem 0 2rem;
     }
 
     /* 3-2. Portfolio Preview */
@@ -665,7 +658,7 @@ input,textarea {
     .work_section .work_list li div>h3 {
         font-size: 2.4rem;
         color: #fff;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
     }
     .work_section .work_list li div>span {
         font-size: 1.1rem;
@@ -674,7 +667,7 @@ input,textarea {
     /* 텍스트 이동 효과 */
     .work_section .work_list li div {
         position: absolute;
-        left: 30px;
+        left: 3rem;
         top: 0;
         z-index: 200;
         opacity: 0;
@@ -682,7 +675,7 @@ input,textarea {
     }
     .work_section .work_list li a:hover div {
         opacity: 1;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
 
     /* 3-4. Portfolio */
@@ -691,9 +684,7 @@ input,textarea {
     }
     .portfolio_section .portfolio_list li {
         margin-top: 0;
-        width: 242.6666666666667px;
         width: 31.5972%;
-        margin-left: 20px;
         margin-left: 2.604167%;
         float: left;
 
@@ -710,7 +701,7 @@ input,textarea {
         display: block;
         font-size: 1.2rem;
         color: #9e9e9e;
-        margin: 10px 0;
+        margin: 1rem 0;
     }
     .portfolio_section .portfolio_list li h3 {
         font-size: 1.6rem;
@@ -719,7 +710,7 @@ input,textarea {
 
     /* 3-5. 태블릿 contact */
     .contact_section {
-        margin-top: 180px;
+        margin-top: 18rem;
     }
     .contact_section .sec_title {
         text-align: center;
@@ -729,36 +720,33 @@ input,textarea {
     }
     /* Input Form */
     .form {
-        width: 374px;
         width: 48.697917%;
-        margin-right: 20px;
         margin-right: 2.604167%;
         /* 플롯 */
         float: left;
     }
     .txta {
-        width: 374px;
         width: 48.697917%;
         /* 플롯 */
         float: right;
     }
     .form input {
-        padding-bottom: 14px;
-        margin-bottom: 40px;
+        padding-bottom: 1.4rem;
+        margin-bottom: 4rem;
     }
     /* Textarea Form */
     .txta textarea {
-        height: 234px;
+        height: 23.4rem;
     }
     /* Button */
     .send_btn {
-        margin-top: 20px;
+        margin-top: 2rem;
         text-align: right;
     }
     .send_btn button {
         font-size: 1.2rem;
         color: #fff;
-        padding: 15px;
+        padding: 1.5rem;
         cursor: pointer;
     }
 
@@ -779,10 +767,10 @@ input,textarea {
 
 
 
-/* PC 미디어쿼리 1024px 이상 */
-@media screen and (min-width:1024px){
+/* PC 미디어쿼리 102.4rem 이상 */
+@media screen and (min-width:102.4rem){
     .header {
-        padding: 18px 16px;
+        padding: 1.8rem 1.6rem;
         /* 위치기준값 */
         position: relative;
     }
@@ -793,20 +781,20 @@ input,textarea {
     .header .logo a {
         font-size: 2.6rem;
         color: #222;
-        letter-spacing: -2px;
+        letter-spacing: -0.2rem;
         font-weight: 500;
     }
     .header .logo img {
-        width: 36px;
+        width: 3.6rem;
     }
     .header hr {
         display: block;
-        margin-top: 17px;
-        margin-left: 20px;
+        margin-top: 1.7rem;
+        margin-left: 2rem;
         float: left;
         width: 52%;
         background: #f0f2f2;
-        height: 1px;
+        height: 0.1rem;
     }
 
     /* GNB */
@@ -827,7 +815,7 @@ input,textarea {
     }
 
     .header .gnb li {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.15);
         border-bottom: 0;
     }
     .header .gnb li a {
@@ -836,14 +824,14 @@ input,textarea {
         text-align: center;
         display: block;
         font-size: 1.4rem;
-        padding: 14px 5% 14px 0;
+        padding: 1.4rem 5% 1.4rem 0;
         padding: 0;
     }
     .depth1 {
         width: auto;
         float: left;
-        margin-top: 10px;
-        margin-right: 54px;
+        margin-top: 1rem;
+        margin-right: 5.4rem;
         color: #fff;
         cursor: pointer;
         /* 위치기준값 */
@@ -862,15 +850,15 @@ input,textarea {
     .gnb .depth2 li a {
         font-size: 1.3rem;
         text-align: left;
-        margin-top: 24px;
-        margin-bottom: 22px;
+        margin-top: 2.4rem;
+        margin-bottom: 2.2rem;
         color: rgba(255, 255, 255, 0.8);
         letter-spacing: -0.01em;
     }
 
     /* Hambuger Toggle */
     header .menu_toggle_btn {
-        margin-top: 4px;
+        margin-top: 0.4rem;
         cursor: pointer;
         /* 플롯 */
         float: right;
@@ -881,13 +869,13 @@ input,textarea {
     .profile hr {
         margin: 0 auto;
         width: 80%;
-        height: 0.5px;
+        height: 0.05rem;
         background: #fff;
         position: relative;
     }
     .profile .profile_wrap img {
-        width: 200px;
-        margin-top: 82px;
+        width: 20rem;
+        margin-top: 8.2rem;
     }
     .profile .profile_wrap {
         color: #fff;
@@ -895,7 +883,7 @@ input,textarea {
         line-height: 1.5;
     }
     .profile .profile_wrap p:nth-child(3) {
-        margin-top: 8px;
+        margin-top: 0.8rem;
         font-size: 1.7rem;
     }
     .profile .profile_wrap p:nth-child(4) {
@@ -909,17 +897,17 @@ input,textarea {
         margin-top: 0;
     }
     .profile .profile_wrap p:nth-child(7) {
-        margin-top: 11px;
+        margin-top: 1.1rem;
         font-size: 1.7rem;
         letter-spacing: -0.005em;
-        margin-bottom: 130px;
+        margin-bottom: 13rem;
     }
     .profile .profile_wrap p:nth-child(7) span {
         font-size: 1.5rem;
     }
     /* Icons */
     .icons {
-        margin-top: 9px;
+        margin-top: 0.9rem;
     }
     /* 아이콘 */
     ul.icons li {
@@ -940,21 +928,18 @@ input,textarea {
 
     .gem {
         text-align: center;
-        margin-top: 24px;
-        margin-bottom: 40px;
+        margin-top: 2.4rem;
+        margin-bottom: 4rem;
     }
 
     /* 3-2. Skills  */
     .skills_section {
-        margin-top: 170px;
+        margin-top: 17rem;
     }
     .skills_section .skills_list li {
         margin-top: 0;
         text-align: center;
-
-        width: 268px;
         width: 23.674912%;
-        margin-left: 20px;
         margin-left: 1.766784%;
         /* 플롯 */
         float: left;
@@ -963,8 +948,8 @@ input,textarea {
         margin-left: 0;
     }
     .skills_section .skills_list li i {
-        text-shadow: 0 0 30px #8ca0c6;
-        font-size: 56px;
+        text-shadow: 0 0 3rem #8ca0c6;
+        font-size: 5.6rem;
         color: #90a4d1;
         color: #fff;
         transition: all 1.2s;
@@ -974,7 +959,7 @@ input,textarea {
         transform: scale(1.1);
     }
     .skills_section .skills_list li h3 {
-        margin: 24px 0 18px;
+        margin: 2.4rem 0 1.8rem;
         color: #383838;
         color: #f0f2f2;
         font-size: 1.8rem;
@@ -999,7 +984,7 @@ input,textarea {
 
     /* 3-2. Portfolio Preview */
     .work_section {
-        margin-top: 168px;
+        margin-top: 16.8rem;
     }
     .work_section .sec_title {
         margin: 0 auto;
@@ -1024,7 +1009,7 @@ input,textarea {
     .work_section .work_list li div>h3 {
         font-size: 2.4rem;
         color: #fff;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
     }
     .work_section .work_list li div>span {
         font-size: 1.1rem;
@@ -1033,7 +1018,7 @@ input,textarea {
     /* 텍스트 이동 효과 */
     .work_section .work_list li div {
         position: absolute;
-        left: 30px;
+        left: 3rem;
         top: 0;
         z-index: 200;
         opacity: 0;
@@ -1041,7 +1026,7 @@ input,textarea {
     }
     .work_section .work_list li a:hover div {
         opacity: 1;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
 
     /* 3-4. Portfolio */
@@ -1056,7 +1041,7 @@ input,textarea {
 
     /* 3-5. PC contact */
     .contact_section {
-        margin-top: 180px;
+        margin-top: 18rem;
     }
     .contact_section .sec_title {
         margin-bottom: 0;
@@ -1068,43 +1053,39 @@ input,textarea {
     }
     /* Input Form */
     .form_box {
-        width: 844px;
         width: 74.558304%;
         /* 플롯 */
         float: right;
     }
     .form {
-        width: 412px;
         width: 48.815166%;
-        margin-right: 20px;
         margin-right: 2.369668%;
         /* 플롯 */
         float: left;
     }
     .txta {
-        width: 412px;
         width: 48.815166%;
         /* 플롯 */
         float: right;
     }
     .form input {
-        padding-bottom: 14px;
-        margin-bottom: 40px;
+        padding-bottom: 1.4rem;
+        margin-bottom: 4rem;
     }
     /* Textarea Form */
     .txta textarea {
-        height: 234px;
+        height: 23.4rem;
     }
 
     /* Button */
     .send_btn {
-        margin-top: 20px;
+        margin-top: 2rem;
         text-align: right;
     }
     .send_btn button {
         font-size: 1.2rem;
         color: #fff;
-        padding: 15px;
+        padding: 1.5rem;
         cursor: pointer;
     }
 
@@ -1112,16 +1093,16 @@ input,textarea {
     .pc_txt {
         color: #494949;
         line-height: 1.5;
-        margin-top: 22px;
-        margin-bottom: 30px;
+        margin-top: 2.2rem;
+        margin-bottom: 3rem;
     }
     .contribution {
-        margin-top: 28px;
+        margin-top: 2.8rem;
     }
     .pf_btn {
         width: 48.84%;
         margin-right: 2%;
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
     }
     .one_btn {
         width: 100%;
@@ -1129,15 +1110,15 @@ input,textarea {
 
 }
 
-@media screen and (min-width:1132px){
+@media screen and (min-width:113.2rem){
     .header hr {
         display: block;
-        margin-top: 17px;
-        margin-left: 20px;
+        margin-top: 1.7rem;
+        margin-left: 2rem;
         float: left;
         width: 56%;
         background: #f0f2f2;
-        height: 1px;
+        height: 0.1rem;
     }
 
 }
