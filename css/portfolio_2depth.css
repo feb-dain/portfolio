@@ -246,7 +246,7 @@ ul.icons li:last-child {
     background-color: rgba(255, 255, 255, 0.075);
 }
 
-/* 3-2. ABOUT */
+/* 3-1. Skills */
 .skills_section {
     margin-top: 9.4rem;
 }
@@ -771,8 +771,6 @@ input,textarea {
 @media screen and (min-width:102.4rem){
     .header {
         padding: 1.8rem 1.6rem;
-        /* 위치기준값 */
-        position: relative;
     }
     .header .logo {
         /* 플롯 */
@@ -789,8 +787,8 @@ input,textarea {
     }
     .header hr {
         display: block;
-        margin-top: 1.7rem;
-        margin-left: 2rem;
+        margin: 1.7rem 0 0 2rem;
+        /* 플롯 */
         float: left;
         width: 52%;
         background: #f0f2f2;
@@ -799,95 +797,58 @@ input,textarea {
 
     /* GNB */
     .header .gnb {
-        width: 100%;
         width: auto;
-        background: rgba(255, 255, 255, 0.15);
-        background: rgba(168, 184, 216,0.94);
         background: none;
         /* 포지션 */
-        position: absolute;
         position: static;
         display: block !important;
         float: right;
-
-        /* 로딩시 가려지도록 */
-        display: none;
     }
 
     .header .gnb li {
-        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.15);
         border-bottom: 0;
     }
     .header .gnb li a {
-        color: #f0f2f2;
-        letter-spacing: -0.01em;
         text-align: center;
-        display: block;
-        font-size: 1.4rem;
-        padding: 1.4rem 5% 1.4rem 0;
         padding: 0;
     }
     .depth1 {
         width: auto;
         float: left;
-        margin-top: 1rem;
-        margin-right: 5.4rem;
-        color: #fff;
-        cursor: pointer;
-        /* 위치기준값 */
-        position: relative;
+        margin: 1rem 5.4rem 0 0;
     }
     
     /* 2 Depth 메뉴 */
     .gnb .depth2 {
         width: auto;
-        /* 포지션 */
-        position: absolute;
-        z-index: 100;
-        background: #c1cce1;
         background: none;
     }
     .gnb .depth2 li a {
         font-size: 1.3rem;
         text-align: left;
-        margin-top: 2.4rem;
-        margin-bottom: 2.2rem;
-        color: rgba(255, 255, 255, 0.8);
+        margin: 2.4rem 0 2.2rem 0;
         letter-spacing: -0.01em;
     }
 
     /* Hambuger Toggle */
     header .menu_toggle_btn {
         margin-top: 0.4rem;
-        cursor: pointer;
-        /* 플롯 */
-        float: right;
         display: none;
     }
     
     /*Profile */
     .profile hr {
-        margin: 0 auto;
         width: 80%;
-        height: 0.05rem;
-        background: #fff;
-        position: relative;
     }
     .profile .profile_wrap img {
         width: 12rem;
-        margin-top: 8.2rem;
+        margin-top: 6.8rem;
     }
     .profile .profile_wrap {
-        color: #fff;
         font-size: 2.1rem;
-        line-height: 1.5;
     }
     .profile .profile_wrap p:nth-child(3) {
-        margin-top: 0.8rem;
         font-size: 1.7rem;
-    }
-    .profile .profile_wrap p:nth-child(4) {
-        letter-spacing: -0.01em;
     }
     .profile .profile_wrap p:nth-child(4),
     .profile .profile_wrap p:nth-child(5) {
@@ -899,7 +860,6 @@ input,textarea {
     .profile .profile_wrap p:nth-child(7) {
         margin-top: 1.1rem;
         font-size: 1.7rem;
-        letter-spacing: -0.005em;
         margin-bottom: 13rem;
     }
     .profile .profile_wrap p:nth-child(7) span {
@@ -911,34 +871,23 @@ input,textarea {
     }
     /* 아이콘 */
     ul.icons li {
-        display: inline-block;
         /* 아이콘 간격 */
         padding: 0 1.84rem 0 0;
     }
     /* Icon Size */
     .icon.alt:before {
-        color: #f0f2f2;
-        display: block;
         font-size: 2.4rem;
         width: 4.3rem;
         height: 4.3rem;
-        text-align: center;
         line-height: 4.3rem;
     }
 
-    .gem {
-        text-align: center;
-        margin-top: 2.4rem;
-        margin-bottom: 4rem;
-    }
-
-    /* 3-2. Skills  */
+    /* 3-1. Skills  */
     .skills_section {
         margin-top: 17rem;
     }
     .skills_section .skills_list li {
         margin-top: 0;
-        text-align: center;
         width: 23.674912%;
         margin-left: 1.766784%;
         /* 플롯 */
@@ -948,85 +897,36 @@ input,textarea {
         margin-left: 0;
     }
     .skills_section .skills_list li i {
-        text-shadow: 0 0 3rem #8ca0c6;
         font-size: 5.6rem;
-        color: #90a4d1;
         color: #fff;
-        transition: all 1.2s;
-        transform: scale(1);
-    }
-    .skills_section .skills_list li i:hover {
-        transform: scale(1.1);
     }
     .skills_section .skills_list li h3 {
         margin: 2.4rem 0 1.8rem;
-        color: #383838;
         color: #f0f2f2;
         font-size: 1.8rem;
-        font-weight: 600;
-        letter-spacing: -0.04em;
     }
     .skills_section .skills_list li p {
-        font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
-        color: #616161;
-        color: #f2f2f2;
         line-height: 1.6;
     }
     .skills_section .skills_list li p+p {
-        font-family: 'Roboto', sans-serif;
         font-size: 1.4rem;
-        color: #ececec;
         line-height: 1.6;
-        font-weight: 300;
-        letter-spacing: -0.01em;
     }
 
     /* 3-2. Portfolio Preview */
+    .gem {
+        margin-top: 2.4rem;
+        margin-bottom: 4rem;
+    }
     .work_section {
         margin-top: 16.8rem;
-    }
-    .work_section .sec_title {
-        margin: 0 auto;
     }
 
     .work_section .work_list li {
         width: 20%;
         /* 플롯 */
         float: left;
-    }
-    .work_section .work_list li a {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    .work_section .work_list li a img {
-        max-width: 100%;
-        width: 100%;
-    }
-
-    /* 텍스트 CSS */
-    .work_section .work_list li div>h3 {
-        font-size: 2.4rem;
-        color: #fff;
-        margin-bottom: 0.8rem;
-    }
-    .work_section .work_list li div>span {
-        font-size: 1.1rem;
-        color: #fff;
-    }
-    /* 텍스트 이동 효과 */
-    .work_section .work_list li div {
-        position: absolute;
-        left: 3rem;
-        top: 0;
-        z-index: 200;
-        opacity: 0;
-        transition: all 0.3s;
-    }
-    .work_section .work_list li a:hover div {
-        opacity: 1;
-        transform: translateY(3rem);
     }
 
     /* 3-4. Portfolio */
@@ -1068,10 +968,6 @@ input,textarea {
         /* 플롯 */
         float: right;
     }
-    .form input {
-        padding-bottom: 1.4rem;
-        margin-bottom: 4rem;
-    }
     /* Textarea Form */
     .txta textarea {
         height: 23.4rem;
@@ -1080,13 +976,6 @@ input,textarea {
     /* Button */
     .send_btn {
         margin-top: 2rem;
-        text-align: right;
-    }
-    .send_btn button {
-        font-size: 1.2rem;
-        color: #fff;
-        padding: 1.5rem;
-        cursor: pointer;
     }
 
     /* Txt, Button */
@@ -1112,13 +1001,7 @@ input,textarea {
 
 @media screen and (min-width:113.2rem){
     .header hr {
-        display: block;
-        margin-top: 1.7rem;
-        margin-left: 2rem;
-        float: left;
-        width: 56%;
-        background: #f0f2f2;
-        height: 0.1rem;
+        width: 52%;
     }
 
 }
