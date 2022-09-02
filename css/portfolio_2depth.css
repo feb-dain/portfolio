@@ -746,7 +746,7 @@ input,textarea {
         cursor: pointer;
     }
 
-    .skills_list li a .job {
+    .skills_list li a p:nth-child(4) {
         display: none;
     }
     .t_txt {
