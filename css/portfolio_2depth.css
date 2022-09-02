@@ -136,30 +136,27 @@ header .menu_toggle_btn span:nth-child(2) {
     margin-top: 1rem;
     font-weight: 500;
 }
-.profile .profile_wrap p:nth-child(3) {
-    margin-top: 0.8rem;
-    font-size: 1.4rem;
-}
-.profile .profile_wrap p:nth-child(4) {
+.profile .profile_wrap .job {
+    margin-top: 0.2rem;
     letter-spacing: -0.01em;
 }
-.profile .profile_wrap p:nth-child(4),
-.profile .profile_wrap p:nth-child(5) {
+.profile .profile_wrap .job,
+.profile .profile_wrap .introduce {
     font-size: 1.3rem;
 }
-.profile .profile_wrap p:nth-child(5) {
+.profile .profile_wrap .introduce {
     margin-top: -0.15rem;
 }
-.profile .profile_wrap p:nth-child(7) {
+.icons {
+    margin-top: 1rem;
+}
+.profile .profile_wrap .contact {
     margin-top: 1rem;
     font-size: 1.5rem;
     letter-spacing: -0.005em;
     margin-bottom: 9rem;
 }
-.icons {
-    margin-top: 0.7rem;
-}
-.profile .profile_wrap p:nth-child(7) span {
+.profile .profile_wrap .contact span {
     font-size: 1.3rem;
 }
 
@@ -750,7 +747,7 @@ input,textarea {
         cursor: pointer;
     }
 
-    .skills_list li a p:nth-child(4) {
+    .skills_list li a .job {
         display: none;
     }
     .t_txt {
@@ -847,22 +844,19 @@ input,textarea {
     .profile .profile_wrap {
         font-size: 2.1rem;
     }
-    .profile .profile_wrap p:nth-child(3) {
-        font-size: 1.7rem;
-    }
-    .profile .profile_wrap p:nth-child(4),
-    .profile .profile_wrap p:nth-child(5) {
+    .profile .profile_wrap .job,
+    .profile .profile_wrap .introduce {
         font-size: 1.5rem;
     }
-    .profile .profile_wrap p:nth-child(5) {
+    .profile .profile_wrap .introduce {
         margin-top: 0;
     }
-    .profile .profile_wrap p:nth-child(7) {
+    .profile .profile_wrap .contact {
         margin-top: 1.1rem;
         font-size: 1.7rem;
         margin-bottom: 10rem;
     }
-    .profile .profile_wrap p:nth-child(7) span {
+    .profile .profile_wrap .contact span {
         font-size: 1.5rem;
     }
     /* Icons */
