@@ -687,8 +687,7 @@ input,textarea {
 
     }
     .portfolio_section .portfolio_list li:nth-child(1) {
-        margin-top: 0;
-        margin-left: 0;
+        margin: 0;
     }
     .portfolio_section .portfolio_list li img {
         max-width: 100%;
@@ -846,7 +845,7 @@ input,textarea {
     }
     .profile .profile_wrap .job,
     .profile .profile_wrap .introduce {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     .profile .profile_wrap .introduce {
         margin-top: 0;
@@ -861,7 +860,7 @@ input,textarea {
     }
     /* Icons */
     .icons {
-        margin-top: 0.9rem;
+        margin-top: 1.1rem;
     }
     /* 아이콘 */
     ul.icons li {
