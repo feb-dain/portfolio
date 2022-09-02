@@ -128,9 +128,6 @@ header .menu_toggle_btn span:nth-child(2) {
 }
 .slider .slider_img img {
     width: 100px;
-    height: 100px;
-    border: 2px solid #fff;
-    border-radius: 50px;
     margin-top: 98px;
 }
 
@@ -889,10 +886,7 @@ input,textarea {
         position: relative;
     }
     .slider .slider_img img {
-        width: 116px;
-        height: 116px;
-        border: 2px solid #fff;
-        border-radius: 58px;
+        width: 200px;
         margin-top: 82px;
     }
     .slider .slider_img {
